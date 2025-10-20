@@ -102,14 +102,21 @@ p {
 
 /* Header et Navigation */
 .header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: transparent;
+  backdrop-filter: none;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--medium-grey);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -123,6 +130,15 @@ p {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--ocean-blue);
+  transition: color 0.3s ease;
+}
+
+.header:not(.scrolled) .logo {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
   text-decoration: none;
 }
 
@@ -140,7 +156,16 @@ p {
   position: relative;
 }
 
+.header:not(.scrolled) .nav-item a {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 .nav-item a:hover {
+  color: var(--turquoise);
+}
+
+.header:not(.scrolled) .nav-item a:hover {
   color: var(--turquoise);
 }
 
@@ -991,4 +1016,81 @@ p {
 
 .nav-internal:hover {
   border-bottom-color: var(--turquoise);
+}
+
+/* Floating dots animation for hero background */
+.floating-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.dotWrapper {
+    position: absolute;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Animation keyframes */
+@keyframes rotating {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flying {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(20px, 50px);
+    }
+    20% {
+        transform: translate(-30px, 10px);
+    }
+    30% {
+        transform: translate(10px, 60px);
+    }
+    40% {
+        transform: translate(50px, 0px);
+    }
+    50% {
+        transform: translate(-10px, -40px);
+    }
+    60% {
+        transform: translate(-40px, 20px);
+    }
+    70% {
+        transform: translate(30px, -30px);
+    }
+    80% {
+        transform: translate(0px, -60px);
+    }
+    90% {
+        transform: translate(40px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
