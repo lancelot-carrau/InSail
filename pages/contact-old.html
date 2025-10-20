@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez InSail - Investisseurs, opérateurs maritimes, journalistes. Rejoignez la révolution de la mobilité maritime régénératrice.">
+    <title>Contact - InSail</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/contact.js"></script>
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">InSail</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a href="vision.html">Notre Vision</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="projet-canaries.html">Projet Pilote</a></li>
+                    <li class="nav-item"><a href="equipe.html">L'Équipe</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Prendre Contact</h1>
+                <p class="hero-subtitle">Naviguons ensemble vers l'avenir maritime</p>
+                <p class="hero-tagline">Investisseur, opérateur, journaliste ou partenaire potentiel, nous sommes à votre écoute</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Formulaire principal -->
+                <div>
+                    <h2>Dites-nous qui vous êtes</h2>
+                    <p class="mb-lg">Votre profil nous aide à vous orienter vers le bon interlocuteur et à vous fournir les informations les plus pertinentes.</p>
+                    
+                    <form id="contactForm" style="max-width: 500px;">
+                        <!-- Raison du contact -->
+                        <div class="form-group">
+                            <label for="contactReason" class="form-label">Vous êtes * :</label>
+                            <select id="contactReason" name="contactReason" class="form-select" required onchange="handleFormChange(this.value)">
+                                <option value="">Sélectionnez votre profil</option>
+                                <option value="investisseur">Je suis un investisseur</option>
+                                <option value="operateur">Je suis un opérateur maritime</option>
+                                <option value="journaliste">Je suis un journaliste</option>
+                                <option value="collaboration">Je veux collaborer (Autre)</option>
+                            </select>
+                            
+                            <!-- BOUTON DE TEST -->
+                            <button type="button" onclick="testForm()" style="margin: 10px; padding: 10px; background: red; color: white; font-size: 16px;">
+                                TEST - Cliquez ici !
+                            </button>
+                        </div>
+
+                        <!-- Nom -->
+                        <div class="form-group">
+                            <label for="nom" class="form-label">Nom complet * :</label>
+                            <input type="text" id="nom" name="nom" class="form-input" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Adresse email * :</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <!-- Organisation -->
+                        <div class="form-group">
+                            <label for="organisation" class="form-label">Organisation / Entreprise :</label>
+                            <input type="text" id="organisation" name="organisation" class="form-input">
+                        </div>
+
+                        <!-- Message personnalisé selon le profil -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <span id="messageLabel">Votre message * :</span>
+                            </label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Décrivez votre intérêt pour InSail, vos questions ou vos propositions de collaboration..."></textarea>
+                        </div>
+
+                        <!-- Informations spécifiques selon le profil -->
+                        <div id="specificFields" style="display: none;">
+                            <!-- Champs qui apparaîtront selon le profil sélectionné -->
+                        </div>
+
+                        <!-- Consentement RGPD -->
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); font-size: 0.9rem; line-height: 1.4;">
+                                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top: 2px; flex-shrink: 0;">
+                                <span>J'accepte que mes données personnelles soient utilisées par InSail pour répondre à ma demande. Ces données ne seront pas transmises à des tiers et pourront être supprimées sur simple demande. *</span>
+                            </label>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); font-size: 0.9rem; line-height: 1.4;">
+                                <input type="checkbox" id="newsletter" name="newsletter" style="margin-top: 2px; flex-shrink: 0;">
+                                <span>Je souhaite recevoir les actualités InSail (maximum 1 email par mois, désinscription possible à tout moment)</span>
+                            </label>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <button type="submit" class="btn" style="width: 100%; margin-top: var(--spacing-md);">
+                            Envoyer le message
+                        </button>
+                    </form>
+                    
+                    <!-- Message de confirmation (caché par défaut) -->
+                    <div id="confirmationMessage" style="display: none; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--mint-green); color: white; border-radius: var(--border-radius);">
+                        <strong>Message envoyé !</strong> Nous vous recontacterons dans les plus brefs délais.
+                    </div>
+                </div>
+
+                <!-- Informations de contact -->
+                <div>
+                    <h2>Autres moyens de nous joindre</h2>
+                    
+                    <div class="card mb-lg">
+                        <h3 style="color: var(--ocean-blue);">Contact Direct</h3>
+                        <p><strong>Email général :</strong> contact@insail.ocean</p>
+                        <p><strong>Presse :</strong> presse@insail.ocean</p>
+                        <p><strong>Partenariats :</strong> partnerships@insail.ocean</p>
+                        <p><strong>Investisseurs :</strong> investors@insail.ocean</p>
+                    </div>
+                    
+                    <div class="card mb-lg">
+                        <h3 style="color: var(--ocean-blue);">Siège Social</h3>
+                        <p>InSail Technologies<br>
+                        [Adresse à définir]<br>
+                        Las Palmas de Gran Canaria<br>
+                        Îles Canaries, Espagne</p>
+                    </div>
+                    
+                    <div class="card mb-lg">
+                        <h3 style="color: var(--ocean-blue);">🏢 Bureau de Développement</h3>
+                        <p>[Adresse à définir]<br>
+                        [Ville], France</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 style="color: var(--ocean-blue);">⏰ Disponibilité</h3>
+                        <p><strong>Réponse email :</strong> Sous 24-48h</p>
+                        <p><strong>Rendez-vous :</strong> Sur demande</p>
+                        <p><strong>Visites du projet :</strong> Possibles aux Canaries (sur réservation)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selon votre profil -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Selon votre profil</h2>
+                <p>Découvrez ce qu'InSail peut vous apporter</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);"></div>
+                    <h3>Investisseurs</h3>
+                    <p>Rejoignez une révolution maritime avec un potentiel de croissance exceptionnel et un impact environnemental positif mesurable.</p>
+                    <ul style="text-align: left; margin-top: var(--spacing-sm); font-size: 0.9rem;">
+                        <li>Business plan détaillé</li>
+                        <li>Projections financières</li>
+                        <li>Roadmap technologique</li>
+                        <li>Métriques d'impact ESG</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);"></div>
+                    <h3>Opérateurs Maritimes</h3>
+                    <p>Transformez votre flotte avec nos solutions hybrides. Réduisez vos coûts opérationnels tout en améliorant votre image de marque.</p>
+                    <ul style="text-align: left; margin-top: var(--spacing-sm); font-size: 0.9rem;">
+                        <li>Audit de flotte existante</li>
+                        <li>Solutions de retrofit</li>
+                        <li>Navires neufs sur mesure</li>
+                        <li>Formation des équipages</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">📰</div>
+                    <h3>Journalistes</h3>
+                    <p>Accédez à notre dossier de presse complet, rencontrez l'équipe et découvrez en exclusivité nos innovations maritime.</p>
+                    <ul style="text-align: left; margin-top: var(--spacing-sm); font-size: 0.9rem;">
+                        <li>Kit presse complet</li>
+                        <li>Photos haute résolution</li>
+                        <li>Interviews équipe</li>
+                        <li>Visite du projet pilote</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-md);">🤝</div>
+                    <h3>Partenaires</h3>
+                    <p>Créons ensemble l'écosystème maritime de demain. Recherche, innovation, développement territorial ou commercial.</p>
+                    <ul style="text-align: left; margin-top: var(--spacing-sm); font-size: 0.9rem;">
+                        <li>Partenariats R&D</li>
+                        <li>Collaborations territoriales</li>
+                        <li>Alliances technologiques</li>
+                        <li>Projets conjoints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ rapide -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Questions Fréquentes</h2>
+            
+            <div class="grid grid-4">
+                <div class="card">
+                    <h4 style="color: var(--ocean-blue);">Quand puis-je voir l'InSail80 en fonctionnement ?</h4>
+                    <p>Le projet pilote aux Canaries est opérationnel. Des visites peuvent être organisées sur demande pour les partenaires potentiels et investisseurs.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--ocean-blue);">Quelle est la maturité technologique ?</h4>
+                    <p>Notre technologie est au stade de démonstration opérationnelle (TRL 7-8). L'InSail80 prouve la viabilité commerciale de notre approche.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--ocean-blue);">Combien coûte un navire InSail ?</h4>
+                    <p>Les coûts varient selon la taille et les spécifications. Nos analyses montrent un ROI attractif grâce aux économies opérationnelles.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--ocean-blue);">Dans quelles régions InSail peut-il opérer ?</h4>
+                    <p>Notre technologie s'adapte à toutes les conditions maritimes. Nous ciblons d'abord les archipels et liaisons côtières courtes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 InSail - Regenerative Ocean Mobility. Tous droits réservés.</p>
+            <p style="margin-top: var(--spacing-sm); font-size: 0.9rem;">Naviguons ensemble vers un océan régénéré</p>
+        </div>
+    </footer>
+
+    <!-- Script pour la navigation mobile -->
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu mobile quand on clique sur un lien
+        document.querySelectorAll('.nav-item a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-menu').classList.remove('active');
+            });
+        });
+            
+            if (!contactReason) {
+                console.error('Élément contactReason non trouvé');
+                return;
+            }
+            
+            contactReason.onchange = function() {
+                const selectedValue = this.value;
+                console.log('Changement détecté:', selectedValue);
+                
+                // Nettoyer les champs spécifiques
+                if (specificFields) {
+                    specificFields.innerHTML = '';
+                    specificFields.style.display = 'none';
+                }
+                
+                if (messageLabel && messageField) {
+                    // Changer le label et placeholder selon la sélection
+                    if (selectedValue === 'investisseur') {
+                        messageLabel.textContent = 'Parlez-nous de votre intérêt d\'investissement * :';
+                        messageField.placeholder = 'Montant d\'investissement envisagé, horizon temporel, secteurs d\'intérêt, questions spécifiques...';
+                    } else if (selectedValue === 'operateur') {
+                        messageLabel.textContent = 'Décrivez votre activité maritime * :';
+                        messageField.placeholder = 'Type d\'opération (ferry, navettes, tourisme...), flotte actuelle, routes exploitées, défis environnementaux...';
+                    } else if (selectedValue === 'journaliste') {
+                        messageLabel.textContent = 'Votre demande média * :';
+                        messageField.placeholder = 'Sujet de l\'article/reportage, délai, type de média, besoins spécifiques (interviews, photos, vidéos)...';
+                    } else if (selectedValue === 'collaboration') {
+                        messageLabel.textContent = 'Votre proposition de collaboration * :';
+                        messageField.placeholder = 'Domaine de collaboration, expertise apportée, projets envisagés, objectifs communs...';
+                    } else {
+                        messageLabel.textContent = 'Votre message * :';
+                        messageField.placeholder = 'Décrivez votre intérêt pour InSail, vos questions ou vos propositions de collaboration...';
+                    }
+                }
+            };
+        }
+        
+        // Initialiser le formulaire quand la page est chargée
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initContactForm);
+        } else {
+            initContactForm();
+        }
+    </script>
+</body>
+</html>
+                        messageLabel.textContent = 'Décrivez votre activité maritime * :';
+                        messageField.placeholder = 'Type d\'opération (ferry, navettes, tourisme...), flotte actuelle, routes exploitées, défis environnementaux...';
+                        
+                        specificFields.innerHTML = `
+                        <div class="form-group">
+                            <label for="operationType" class="form-label">Type d'opération :</label>
+                            <select id="operationType" name="operationType" class="form-select">
+                                <option value="">Sélectionnez</option>
+                                <option value="ferry">Liaisons ferry</option>
+                                <option value="navettes">Navettes touristiques</option>
+                                <option value="excursions">Excursions maritimes</option>
+                                <option value="workboat">Navires de service</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fleetSize" class="form-label">Taille de flotte :</label>
+                            <input type="text" id="fleetSize" name="fleetSize" class="form-input" placeholder="Nombre et types de navires">
+                        </div>
+                    `;
+                    specificFields.style.display = 'block';
+                    break;
+                    
+                case 'journaliste':
+                    messageLabel.textContent = 'Votre demande média * :';
+                    messageField.placeholder = 'Sujet de l\'article/reportage, délai, type de média, besoins spécifiques (interviews, photos, vidéos)...';
+                    
+                    specificFields.innerHTML = `
+                        <div class="form-group">
+                            <label for="mediaType" class="form-label">Type de média :</label>
+                            <select id="mediaType" name="mediaType" class="form-select">
+                                <option value="">Sélectionnez</option>
+                                <option value="presse">Presse écrite</option>
+                                <option value="web">Média web</option>
+                                <option value="tv">Télévision</option>
+                                <option value="radio">Radio</option>
+                                <option value="podcast">Podcast</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline" class="form-label">Délai de publication :</label>
+                            <input type="text" id="deadline" name="deadline" class="form-input" placeholder="ex: fin mars 2025">
+                        </div>
+                    `;
+                    specificFields.style.display = 'block';
+                    break;
+                    
+                case 'collaboration':
+                    messageLabel.textContent = 'Votre proposition de collaboration * :';
+                    messageField.placeholder = 'Domaine de collaboration, expertise apportée, projets envisagés, objectifs communs...';
+                    
+                    specificFields.innerHTML = `
+                        <div class="form-group">
+                            <label for="collabType" class="form-label">Type de collaboration :</label>
+                            <select id="collabType" name="collabType" class="form-select">
+                                <option value="">Sélectionnez</option>
+                                <option value="recherche">Recherche & Développement</option>
+                                <option value="territorial">Développement territorial</option>
+                                <option value="commercial">Partenariat commercial</option>
+                                <option value="technique">Expertise technique</option>
+                                <option value="formation">Formation / Éducation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    `;
+                    specificFields.style.display = 'block';
+                    break;
+                    
+                default:
+                    messageLabel.textContent = 'Votre message * :';
+                    messageField.placeholder = 'Décrivez votre intérêt pour InSail, vos questions ou vos propositions de collaboration...';
+            }
+        });
+
+        // Gestion de l'envoi du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulation de l'envoi (en réalité, vous intégreriez avec votre backend)
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            
+            console.log('Données du formulaire:', formObject);
+            
+            // Afficher le message de confirmation
+            document.getElementById('confirmationMessage').style.display = 'block';
+            
+            // Réinitialiser le formulaire
+            this.reset();
+            specificFields.innerHTML = '';
+            specificFields.style.display = 'none';
+            messageLabel.textContent = 'Votre message * :';
+            messageField.placeholder = 'Décrivez votre intérêt pour InSail, vos questions ou vos propositions de collaboration...';
+            
+            // Scroll vers le message de confirmation
+            document.getElementById('confirmationMessage').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+        
+        }); // Fin du DOMContentLoaded
+    </script>
+</body>
+</html>

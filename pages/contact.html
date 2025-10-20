@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez InSail - Investisseurs, opérateurs maritimes, journalistes. Rejoignez la révolution de la mobilité maritime régénératrice.">
+    <title>Contact - InSail</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/contact.js"></script>
+    <script src="../js/navigation.js"></script>
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">InSail</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a href="vision.html">Notre Vision</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="projet-canaries.html">Projet Pilote</a></li>
+                    <li class="nav-item"><a href="equipe.html">L'Équipe</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.4), rgba(0, 48, 95, 0.4)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact</h1>
+                <p class="hero-subtitle">Naviguons ensemble</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Formulaire principal -->
+                <div>
+                    <h2>Envoyez-nous un message</h2>
+                    
+                    <form id="contactForm" style="max-width: 500px;">
+                        <!-- Raison du contact -->
+                        <div class="form-group">
+                            <label for="contactReason" class="form-label">Vous êtes * :</label>
+                            <select id="contactReason" name="contactReason" class="form-select" required onchange="handleFormChange(this.value)">
+                                <option value="">Sélectionnez votre profil</option>
+                                <option value="investisseur">Investisseur</option>
+                                <option value="operateur">Opérateur maritime</option>
+                                <option value="journaliste">Journaliste</option>
+                                <option value="collaboration">Autre</option>
+                            </select>
+                        </div>
+
+                        <!-- Nom -->
+                        <div class="form-group">
+                            <label for="nom" class="form-label">Nom * :</label>
+                            <input type="text" id="nom" name="nom" class="form-input" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email * :</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <!-- Organisation -->
+                        <div class="form-group">
+                            <label for="organisation" class="form-label">Organisation :</label>
+                            <input type="text" id="organisation" name="organisation" class="form-input">
+                        </div>
+
+                        <!-- Message personnalisé selon le profil -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <span id="messageLabel">Message * :</span>
+                            </label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <!-- Consentement RGPD -->
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); font-size: 0.9rem; line-height: 1.4;">
+                                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top: 2px; flex-shrink: 0;">
+                                <span>J'accepte que mes données soient utilisées pour répondre à ma demande. *</span>
+                            </label>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md);">
+                            Envoyer
+                        </button>
+                    </form>
+                    
+                    <!-- Message de confirmation (caché par défaut) -->
+                    <div id="confirmationMessage" style="display: none; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--mint-green); color: white; border-radius: var(--border-radius);">
+                        <strong>Message envoyé !</strong> Nous vous recontacterons bientôt.
+                    </div>
+                </div>
+
+                <!-- Informations de contact -->
+                <div>
+                    <h2>Coordonnées</h2>
+                    
+                    <div class="card mb-lg">
+                        <h3 style="color: var(--ocean-blue);">Email</h3>
+                        <p>contact@insail.ocean</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 style="color: var(--ocean-blue);">Réseaux</h3>
+                        <p>LinkedIn : InSail Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">InSail</h3>
+                    <p>Révolutionner la mobilité maritime pour un océan régénéré</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="vision.html">Notre Vision</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projet-canaries.html">Projet Pilote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Nous contacter</h4>
+                    <ul class="footer-links">
+                        <li><a href="equipe.html">L'Équipe</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:contact@insail.ocean">contact@insail.ocean</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InSail. Tous droits réservés. | Conçu pour l'océan de demain</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

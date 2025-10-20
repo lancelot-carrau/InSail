@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InSail - Regenerative Ocean Mobility. From our pilot routes to your custom fleet. Revolutionary maritime solutions for sustainable ocean transport.">
+    <meta name="keywords" content="maritime mobility, sustainable ships, regenerative ocean, hybrid catamaran, eco-friendly marine transport">
+    <title>InSail - Regenerative Ocean Mobility</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="fr" href="../index.html">
+    <link rel="alternate" hreflang="es" href="../es/index.html">
+    <link rel="alternate" hreflang="en" href="index-en.html">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index-en.html" class="logo">InSail</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index-en.html">Home</a></li>
+                    <li class="nav-item"><a href="vision-en.html">Our Vision</a></li>
+                    <li class="nav-item"><a href="services-en.html">Services</a></li>
+                    <li class="nav-item"><a href="canary-pilot-en.html">Pilot Project</a></li>
+                    <li class="nav-item"><a href="team-en.html">The Team</a></li>
+                    <li class="nav-item"><a href="contact-en.html">Contact</a></li>
+                </ul>
+                
+                <!-- Language selector -->
+                <div class="language-selector" style="margin-left: var(--spacing-sm);">
+                    <select onchange="changeLanguage(this.value)" style="padding: 4px; border: 1px solid var(--medium-grey); border-radius: 4px; font-size: 0.9rem;">
+                        <option value="en" selected>EN</option>
+                        <option value="fr">FR</option>
+                        <option value="es">ES</option>
+                    </select>
+                </div>
+                
+                <button class="nav-toggle" id="nav-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Regenerative Ocean Mobility</h1>
+                <p class="hero-subtitle">From our pilot routes to your custom fleet</p>
+                <p class="hero-tagline">Rethinking maritime mobility to regenerate, not just sustain</p>
+                <a href="canary-pilot-en.html" class="btn btn-white">Discover our technology</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>At InSail, we believe maritime mobility can become a vector for ocean regeneration. Our mission is to transform an industry that is often noisy, polluting, and disconnected from the environment into a system that respects and preserves marine biodiversity.</p>
+                    <p>We develop hybrid maritime transport solutions that combine the power of wind with clean technologies, drastically reducing environmental impact while maintaining performance and reliability.</p>
+                    <a href="vision-en.html" class="nav-internal">Learn more about our vision →</a>
+                </div>
+                <div>
+                    <h2>Innovation & Regeneration</h2>
+                    <p>Our approach is based on three fundamental pillars:</p>
+                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-md);">
+                        <li style="margin-bottom: var(--spacing-sm); padding-left: var(--spacing-md); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 600;">•</span>
+                            <strong>Circular Economy</strong> - Recycled and recyclable materials
+                        </li>
+                        <li style="margin-bottom: var(--spacing-sm); padding-left: var(--spacing-md); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 600;">•</span>
+                            <strong>Biomimicry</strong> - Learning from nature to innovate
+                        </li>
+                        <li style="margin-bottom: var(--spacing-sm); padding-left: var(--spacing-md); position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 600;">•</span>
+                            <strong>Positive Impact</strong> - Regenerating marine ecosystems
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Note: This is just an example showing the multilingual structure -->
+    <!-- The rest of the page would follow the same pattern as the French version -->
+    <!-- but with translated content and appropriate hreflang attributes -->
+
+    <script>
+        // Language switching functionality
+        function changeLanguage(language) {
+            const currentPath = window.location.pathname;
+            let newPath;
+            
+            switch(language) {
+                case 'fr':
+                    newPath = '../index.html'; // French version
+                    break;
+                case 'es':
+                    newPath = '../es/index.html'; // Spanish version (to be created)
+                    break;
+                case 'en':
+                default:
+                    newPath = 'index-en.html'; // English version
+                    break;
+            }
+            
+            window.location.href = newPath;
+        }
+        
+        // Mobile navigation
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-item a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-menu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
