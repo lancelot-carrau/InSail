@@ -1,5 +1,38 @@
 // Formulaire de contact - Version simple et efficace
 
+// Gestion du scroll pour la navbar transparente
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+    
+    // Appeler au chargement et à chaque scroll
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    
+    // Navigation mobile
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-item a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+});
+
 function handleFormChange(selectedValue) {
     console.log('Profil sélectionné:', selectedValue);
     

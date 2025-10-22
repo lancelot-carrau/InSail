@@ -2,6 +2,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const header = document.querySelector('.header');
+    
+    // Gestion du scroll pour la navbar transparente
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+    
+    // Appeler au chargement et à chaque scroll
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
     
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {

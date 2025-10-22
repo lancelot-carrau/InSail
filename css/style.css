@@ -385,8 +385,8 @@ p {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--white);
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: var(--turquoise);
+  border: 2px solid var(--turquoise);
   border-radius: var(--border-radius-xl);
   padding: var(--spacing-md) var(--spacing-xl);
   font-weight: 600;
@@ -394,10 +394,11 @@ p {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: var(--white);
+  background-color: var(--turquoise);
+  color: var(--white);
+  border-color: var(--turquoise);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(77, 182, 172, 0.4);
 }
 
 .btn-white {
@@ -1093,4 +1094,24 @@ p {
     100% {
         transform: translate(0, 0);
     }
+}
+
+/* Particles animation canvas */
+.particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particles-section {
+    position: relative;
+}
+
+.particles-section > .container {
+    position: relative;
+    z-index: 2;
 }
