@@ -1,0 +1,1459 @@
+{
+  "metadata": {
+    "project": "InSail Website",
+    "version": "1.0",
+    "date": "2025-10-22",
+    "languages": ["fr", "en", "es"],
+    "instructions": "Ce fichier contient tous les textes du site InSail. Remplissez les versions EN et ES en traduisant le texte FR."
+  },
+
+  "common": {
+    "navigation": {
+      "logo": {
+        "fr": "InSail",
+        "en": "",
+        "es": ""
+      },
+      "home": {
+        "fr": "Accueil",
+        "en": "",
+        "es": ""
+      },
+      "vision": {
+        "fr": "Notre Vision",
+        "en": "",
+        "es": ""
+      },
+      "services": {
+        "fr": "Services",
+        "en": "",
+        "es": ""
+      },
+      "pilot_project": {
+        "fr": "Projet Pilote",
+        "en": "",
+        "es": ""
+      },
+      "team": {
+        "fr": "L'Équipe",
+        "en": "",
+        "es": ""
+      },
+      "contact": {
+        "fr": "Contact",
+        "en": "",
+        "es": ""
+      }
+    },
+    "footer": {
+      "copyright": {
+        "fr": "© 2025 InSail - Regenerative Ocean Mobility. Tous droits réservés.",
+        "en": "",
+        "es": ""
+      },
+      "tagline": {
+        "fr": "Naviguons ensemble vers un océan régénéré",
+        "en": "",
+        "es": ""
+      }
+    },
+    "buttons": {
+      "discover": {
+        "fr": "Découvrir",
+        "en": "",
+        "es": ""
+      },
+      "contact": {
+        "fr": "Contact",
+        "en": "",
+        "es": ""
+      },
+      "learn_more": {
+        "fr": "En savoir plus",
+        "en": "",
+        "es": ""
+      },
+      "send": {
+        "fr": "Envoyer",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "homepage": {
+    "meta": {
+      "title": {
+        "fr": "InSail - Regenerative Ocean Mobility",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "InSail - Regenerative Ocean Mobility. De nos lignes pilotes à votre flotte sur mesure. Solutions maritimes durables et régénératrices.",
+        "en": "",
+        "es": ""
+      },
+      "keywords": {
+        "fr": "mobilité maritime, navires durables, océan régénératif, catamaran hybride, transport maritime écologique",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "InSail",
+        "en": "",
+        "es": ""
+      },
+      "subtitle_dynamic_words": {
+        "fr": ["Regenerative", "Silencieuse", "Durable", "Innovante"],
+        "en": [],
+        "es": []
+      },
+      "subtitle_suffix": {
+        "fr": "Ocean Mobility",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "La navigation maritime réinventée pour régénérer les océans.",
+        "en": "",
+        "es": ""
+      },
+      "video_alt": {
+        "fr": "Votre navigateur ne supporte pas les vidéos HTML5.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "vision_section": {
+      "title_1": {
+        "fr": "Une nouvelle ère",
+        "en": "",
+        "es": ""
+      },
+      "description_1": {
+        "fr": "La mobilité maritime peut devenir un vecteur de régénération océanique. InSail combine la force du vent et des technologies propres pour un transport maritime performant et respectueux.",
+        "en": "",
+        "es": ""
+      },
+      "link_1": {
+        "fr": "Notre vision →",
+        "en": "",
+        "es": ""
+      },
+      "title_2": {
+        "fr": "Notre approche",
+        "en": "",
+        "es": ""
+      },
+      "approach_item_1": {
+        "fr": "Économie circulaire",
+        "en": "",
+        "es": ""
+      },
+      "approach_item_2": {
+        "fr": "Biomimétisme",
+        "en": "",
+        "es": ""
+      },
+      "approach_item_3": {
+        "fr": "Impact positif",
+        "en": "",
+        "es": ""
+      }
+    },
+    "services_section": {
+      "title": {
+        "fr": "Nos solutions",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Du conseil stratégique à la construction de navires hybrides.",
+        "en": "",
+        "es": ""
+      },
+      "service_1_title": {
+        "fr": "Conseil",
+        "en": "",
+        "es": ""
+      },
+      "service_1_description": {
+        "fr": "Accompagnement stratégique pour la transition maritime.",
+        "en": "",
+        "es": ""
+      },
+      "service_2_title": {
+        "fr": "Resorts",
+        "en": "",
+        "es": ""
+      },
+      "service_2_description": {
+        "fr": "Navettes premium pour un tourisme régénératif.",
+        "en": "",
+        "es": ""
+      },
+      "service_3_title": {
+        "fr": "Navires",
+        "en": "",
+        "es": ""
+      },
+      "service_3_description": {
+        "fr": "Co-développement de navires hybrides sur mesure.",
+        "en": "",
+        "es": ""
+      },
+      "service_4_title": {
+        "fr": "Projet Pilote",
+        "en": "",
+        "es": ""
+      },
+      "service_4_description": {
+        "fr": "Notre vitrine technologique aux Canaries.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "performance_section": {
+      "title": {
+        "fr": "L'InSail80",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Notre catamaran hybride de 24,4m en action aux Canaries",
+        "en": "",
+        "es": ""
+      },
+      "stat_1_value": {
+        "fr": "80%",
+        "en": "",
+        "es": ""
+      },
+      "stat_1_label": {
+        "fr": "du temps sous voile",
+        "en": "",
+        "es": ""
+      },
+      "stat_2_value": {
+        "fr": "99%",
+        "en": "",
+        "es": ""
+      },
+      "stat_2_label": {
+        "fr": "réduction CO₂",
+        "en": "",
+        "es": ""
+      },
+      "stat_3_value": {
+        "fr": "92%",
+        "en": "",
+        "es": ""
+      },
+      "stat_3_label": {
+        "fr": "réduction bruit",
+        "en": "",
+        "es": ""
+      },
+      "button": {
+        "fr": "Le projet",
+        "en": "",
+        "es": ""
+      }
+    },
+    "cta_section": {
+      "title": {
+        "fr": "Naviguons ensemble",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Découvrons comment transformer votre vision maritime.",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "vision_page": {
+    "meta": {
+      "title": {
+        "fr": "Notre Vision - InSail",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Notre vision - Repenser la mobilité maritime pour qu'elle régénère. Découvrez la philosophie InSail et notre approche révolutionnaire.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "Notre Vision",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Régénérer, pas seulement préserver",
+        "en": "",
+        "es": ""
+      }
+    },
+    "philosophy_section": {
+      "title": {
+        "fr": "Notre philosophie",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Créer un impact positif sur les écosystèmes océaniques.",
+        "en": "",
+        "es": ""
+      },
+      "problem_title": {
+        "fr": "Le problème",
+        "en": "",
+        "es": ""
+      },
+      "problem_1": {
+        "fr": "Pollution sonore et carbone",
+        "en": "",
+        "es": ""
+      },
+      "problem_2": {
+        "fr": "Impact sur la biodiversité marine",
+        "en": "",
+        "es": ""
+      },
+      "problem_3": {
+        "fr": "Technologies obsolètes",
+        "en": "",
+        "es": ""
+      },
+      "solution_title": {
+        "fr": "Notre solution",
+        "en": "",
+        "es": ""
+      },
+      "solution_1": {
+        "fr": "Navigation silencieuse",
+        "en": "",
+        "es": ""
+      },
+      "solution_2": {
+        "fr": "80% du temps sous voile",
+        "en": "",
+        "es": ""
+      },
+      "solution_3": {
+        "fr": "Matériaux recyclés",
+        "en": "",
+        "es": ""
+      }
+    },
+    "principles_section": {
+      "title": {
+        "fr": "Nos principes",
+        "en": "",
+        "es": ""
+      },
+      "principle_1_title": {
+        "fr": "Économie Circulaire",
+        "en": "",
+        "es": ""
+      },
+      "principle_1_description": {
+        "fr": "Matériaux recyclés et recyclables. Conception modulaire et durable.",
+        "en": "",
+        "es": ""
+      },
+      "principle_2_title": {
+        "fr": "Biomimétisme",
+        "en": "",
+        "es": ""
+      },
+      "principle_2_description": {
+        "fr": "Inspiration des formes naturelles pour une navigation efficace.",
+        "en": "",
+        "es": ""
+      },
+      "principle_3_title": {
+        "fr": "Impact Positif",
+        "en": "",
+        "es": ""
+      },
+      "principle_3_description": {
+        "fr": "Respect des corridors biologiques et monitoring environnemental.",
+        "en": "",
+        "es": ""
+      },
+      "principle_4_title": {
+        "fr": "Innovation",
+        "en": "",
+        "es": ""
+      },
+      "principle_4_description": {
+        "fr": "R&D continue et technologies évolutives.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "cta_section": {
+      "title": {
+        "fr": "Ensemble",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Un réseau de navires qui régénère les océans.",
+        "en": "",
+        "es": ""
+      },
+      "button_1": {
+        "fr": "Le projet pilote",
+        "en": "",
+        "es": ""
+      },
+      "button_2": {
+        "fr": "Contact",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "services_page": {
+    "meta": {
+      "title": {
+        "fr": "Services - InSail",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Services InSail - Consultoria, Offre Resorts, Vente de Navires, Projet Pilote. Approche 360° de la transition maritime durable.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "Nos Solutions",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Du conseil à la navigation",
+        "en": "",
+        "es": ""
+      }
+    },
+    "services": {
+      "service_1_title": {
+        "fr": "Conseil",
+        "en": "",
+        "es": ""
+      },
+      "service_1_description": {
+        "fr": "Accompagnement stratégique pour la transition maritime durable.",
+        "en": "",
+        "es": ""
+      },
+      "service_2_title": {
+        "fr": "Resorts",
+        "en": "",
+        "es": ""
+      },
+      "service_2_description": {
+        "fr": "Navettes premium pour un tourisme régénératif.",
+        "en": "",
+        "es": ""
+      },
+      "service_3_title": {
+        "fr": "Navires",
+        "en": "",
+        "es": ""
+      },
+      "service_3_description": {
+        "fr": "Co-développement de navires hybrides sur mesure.",
+        "en": "",
+        "es": ""
+      },
+      "service_4_title": {
+        "fr": "Projet Pilote",
+        "en": "",
+        "es": ""
+      },
+      "service_4_description": {
+        "fr": "Notre vitrine technologique aux Canaries.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "cta_section": {
+      "title": {
+        "fr": "Prêt à faire évoluer votre projet maritime ?",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Discutons de vos besoins",
+        "en": "",
+        "es": ""
+      },
+      "button": {
+        "fr": "Contactez-nous",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "team_page": {
+    "meta": {
+      "title": {
+        "fr": "L'Équipe - InSail",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "L'équipe InSail - Rencontrez Tanguy (CEO), Mercedes (Territorial Strategy), Jordi (Environmental Strategy), Florian (Engineering). Experts en navigation hauturière et innovation maritime.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "L'Équipe InSail",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Des co-fondateurs unis par une vision commune : révolutionner la mobilité maritime",
+        "en": "",
+        "es": ""
+      }
+    },
+    "intro_section": {
+      "title": {
+        "fr": "L'expertise au service de l'océan",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "L'équipe InSail réunit des profils complémentaires partageant une passion commune pour l'océan et l'innovation. De l'entrepreneuriat à l'ingénierie, des sciences marines à la navigation hauturière, chaque expertise contribue à notre vision régénératrice.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "team_members": {
+      "tanguy": {
+        "name": {
+          "fr": "Tanguy",
+          "en": "",
+          "es": ""
+        },
+        "role": {
+          "fr": "Chief Executive Officer",
+          "en": "",
+          "es": ""
+        },
+        "specialties": {
+          "fr": ["Entrepreneur", "Athlète Pro", "Navigateur", "Vie en mer"],
+          "en": [],
+          "es": []
+        },
+        "description": {
+          "fr": "Entrepreneur aguerri avec plusieurs succès à son actif, Tanguy apporte une vision stratégique claire et une capacité d'exécution éprouvée. Athlète professionnel et navigateur passionné, il a vécu à bord et parcouru de nombreux milles nautiques, lui conférant une compréhension intime des défis maritimes et de la vie en mer.",
+          "en": "",
+          "es": ""
+        },
+        "quote": {
+          "fr": "L'océan nous enseigne l'humilité et l'innovation. InSail transforme ces leçons en solutions durables.",
+          "en": "",
+          "es": ""
+        }
+      },
+      "mercedes": {
+        "name": {
+          "fr": "Mercedes",
+          "en": "",
+          "es": ""
+        },
+        "role": {
+          "fr": "Territorial Strategy Director",
+          "en": "",
+          "es": ""
+        },
+        "specialties": {
+          "fr": ["Ingénieure électromécanicienne", "Économie circulaire", "Biomimétisme", "Navigatrice"],
+          "en": [],
+          "es": []
+        },
+        "description": {
+          "fr": "Spécialiste reconnue en économie circulaire et biomimétisme, Mercedes traduit les principes naturels en innovations concrètes. Elle conçoit l'implantation d'InSail dans les écosystèmes locaux, créant des synergies entre innovation technologique et développement territorial durable.",
+          "en": "",
+          "es": ""
+        },
+        "quote": {
+          "fr": "La nature a déjà inventé les meilleures solutions. Notre rôle est de les comprendre et de les adapter.",
+          "en": "",
+          "es": ""
+        }
+      },
+      "jordi": {
+        "name": {
+          "fr": "Jordi",
+          "en": "",
+          "es": ""
+        },
+        "role": {
+          "fr": "Environmental Strategy Director",
+          "en": "",
+          "es": ""
+        },
+        "specialties": {
+          "fr": ["Scientifique de l'environnement", "Sciences maritimes", "Monitoring écologique", "Impact régénératif"],
+          "en": [],
+          "es": []
+        },
+        "description": {
+          "fr": "Expert en sciences maritimes et environnementales, Jordi apporte la rigueur scientifique nécessaire pour mesurer et optimiser l'impact régénératif de nos solutions. Il définit les standards environnementaux d'InSail et établit les partenariats avec les instituts de recherche.",
+          "en": "",
+          "es": ""
+        },
+        "quote": {
+          "fr": "Chaque décision technique doit être validée par son impact sur l'écosystème marin.",
+          "en": "",
+          "es": ""
+        }
+      },
+      "florian": {
+        "name": {
+          "fr": "Florian",
+          "en": "",
+          "es": ""
+        },
+        "role": {
+          "fr": "Engineering and Innovation Director",
+          "en": "",
+          "es": ""
+        },
+        "specialties": {
+          "fr": ["Ingénieur design mécanique", "Chef de projet innovation", "Navigateur", "Vie à bord"],
+          "en": [],
+          "es": []
+        },
+        "description": {
+          "fr": "Ingénieur en design mécanique et chef de projet innovation reconnu, Florian pilote le développement technique de nos navires. Navigateur expérimenté ayant vécu à bord pendant de longues périodes, il fusionne l'innovation de pointe avec la réalité opérationnelle maritime.",
+          "en": "",
+          "es": ""
+        },
+        "quote": {
+          "fr": "L'innovation n'a de sens que si elle améliore concrètement la performance et l'impact environnemental.",
+          "en": "",
+          "es": ""
+        }
+      }
+    },
+    "experience_section": {
+      "title": {
+        "fr": "L'expérience de la navigation hauturière",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "L'expérience de vie en mer de Tanguy et Florian nourrit directement l'innovation InSail",
+        "en": "",
+        "es": ""
+      },
+      "lessons_title": {
+        "fr": "Leçons de la Mer",
+        "en": "",
+        "es": ""
+      },
+      "lessons": {
+        "lesson_1": {
+          "fr": "Fiabilité absolue - Les systèmes doivent fonctionner dans toutes les conditions",
+          "en": "",
+          "es": ""
+        },
+        "lesson_2": {
+          "fr": "Efficacité énergétique - Chaque ressource compte lors des navigations prolongées",
+          "en": "",
+          "es": ""
+        },
+        "lesson_3": {
+          "fr": "Respect de l'environnement - L'océan exige humilité et adaptation",
+          "en": "",
+          "es": ""
+        },
+        "lesson_4": {
+          "fr": "Autonomie - La vie à bord développe l'ingéniosité et la résilience",
+          "en": "",
+          "es": ""
+        }
+      },
+      "innovation_title": {
+        "fr": "Innovation Transférée",
+        "en": "",
+        "es": ""
+      },
+      "innovations": {
+        "innovation_1": {
+          "fr": "Conception adaptée - Design pensé pour la vie à bord au quotidien",
+          "en": "",
+          "es": ""
+        },
+        "innovation_2": {
+          "fr": "Systèmes intelligents - Automatisation pour faciliter la navigation",
+          "en": "",
+          "es": ""
+        },
+        "innovation_3": {
+          "fr": "Voilures performantes - Optimisation pour différentes conditions",
+          "en": "",
+          "es": ""
+        },
+        "innovation_4": {
+          "fr": "Monitoring avancé - Capteurs et télémétrie pour la sécurité",
+          "en": "",
+          "es": ""
+        }
+      }
+    },
+    "philosophy_section": {
+      "title": {
+        "fr": "Une philosophie commune",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Au-delà des compétences individuelles, l'équipe InSail partage des valeurs profondes",
+        "en": "",
+        "es": ""
+      },
+      "value_1_title": {
+        "fr": "Excellence",
+        "en": "",
+        "es": ""
+      },
+      "value_1_description": {
+        "fr": "Chaque membre apporte une expertise technique de haut niveau, forgée par l'expérience et la passion. L'excellence n'est pas un objectif mais un standard de fonctionnement.",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "pilot_project_page": {
+    "meta": {
+      "title": {
+        "fr": "Projet Pilote Canaries - InSail80",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Projet Pilote InSail aux Canaries - L'InSail80, catamaran hybride de 24,4m sur la route Tenerife-La Gomera. 80% sous voile, 99% de réduction carbone.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "Projet Pilote aux Canaries",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "L'InSail80 en action",
+        "en": "",
+        "es": ""
+      }
+    },
+    "project_section": {
+      "title": {
+        "fr": "Tenerife - La Gomera",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Un catamaran hybride de 24,4m dans un corridor à haute biodiversité.",
+        "en": "",
+        "es": ""
+      },
+      "vessel_title": {
+        "fr": "Le navire",
+        "en": "",
+        "es": ""
+      },
+      "vessel_items": {
+        "item_1": {
+          "fr": "24,4 mètres - Catamaran hybride",
+          "en": "",
+          "es": ""
+        },
+        "item_2": {
+          "fr": "80% du temps sous voile",
+          "en": "",
+          "es": ""
+        },
+        "item_3": {
+          "fr": "Propulsion électrique d'appoint",
+          "en": "",
+          "es": ""
+        },
+        "item_4": {
+          "fr": "Matériaux recyclés",
+          "en": "",
+          "es": ""
+        }
+      },
+      "impact_title": {
+        "fr": "L'impact",
+        "en": "",
+        "es": ""
+      },
+      "impact_items": {
+        "item_1": {
+          "fr": "99% réduction CO₂",
+          "en": "",
+          "es": ""
+        },
+        "item_2": {
+          "fr": "92% réduction bruit",
+          "en": "",
+          "es": ""
+        },
+        "item_3": {
+          "fr": "Protection des cétacés",
+          "en": "",
+          "es": ""
+        },
+        "item_4": {
+          "fr": "Laboratoire d'innovation",
+          "en": "",
+          "es": ""
+        }
+      }
+    },
+    "infographic_section": {
+      "title": {
+        "fr": "InSail.One en chiffres",
+        "en": "InSail.One in numbers",
+        "es": "InSail.One en cifras"
+      },
+      "subtitle": {
+        "fr": "Le premier ferry hybride éolico-électrique d'Espagne : données techniques et impact environnemental",
+        "en": "Spain's first hybrid wind-electric ferry: technical data and environmental impact",
+        "es": "El primer ferry híbrido eólico-eléctrico de España: datos técnicos e impacto ambiental"
+      },
+      "vessel_title": {
+        "fr": "Le Navire",
+        "en": "The Vessel",
+        "es": "El Barco"
+      },
+      "impact_title": {
+        "fr": "L'Impact Environnemental",
+        "en": "Environmental Impact",
+        "es": "Impacto Ambiental"
+      },
+      "specs": {
+        "length": {
+          "fr": "Longueur",
+          "en": "Length",
+          "es": "Longitud"
+        },
+        "catamaran": {
+          "fr": "Catamaran 80 pieds",
+          "en": "80-foot catamaran",
+          "es": "Catamarán de 80 pies"
+        },
+        "passengers": {
+          "fr": "Passagers",
+          "en": "Passengers",
+          "es": "Pasajeros"
+        },
+        "speed": {
+          "fr": "12 nœuds de vitesse",
+          "en": "12 knots speed",
+          "es": "12 nudos de velocidad"
+        },
+        "sails": {
+          "fr": "Voiles automatisées",
+          "en": "Automated sails",
+          "es": "Velas automatizadas"
+        },
+        "solar": {
+          "fr": "Panneaux solaires",
+          "en": "Solar panels",
+          "es": "Paneles solares"
+        },
+        "solar_capacity": {
+          "fr": "72 kWc - 180 kWh/voyage",
+          "en": "72 kWc - 180 kWh/trip",
+          "es": "72 kWc - 180 kWh/viaje"
+        },
+        "batteries": {
+          "fr": "Batteries LiFePO4",
+          "en": "LiFePO4 Batteries",
+          "es": "Baterías LiFePO4"
+        },
+        "motors": {
+          "fr": "Moteurs électriques",
+          "en": "Electric motors",
+          "es": "Motores eléctricos"
+        },
+        "backup": {
+          "fr": "Propulsion d'appoint",
+          "en": "Backup propulsion",
+          "es": "Propulsión de respaldo"
+        },
+        "sailing_time": {
+          "fr": "Temps sous voile",
+          "en": "Time under sail",
+          "es": "Tiempo a vela"
+        },
+        "automated": {
+          "fr": "Navigation automatisée",
+          "en": "Automated navigation",
+          "es": "Navegación automatizada"
+        },
+        "recycled_carbon": {
+          "fr": "Carbone recyclé",
+          "en": "Recycled carbon",
+          "es": "Carbono reciclado"
+        },
+        "aeronautical": {
+          "fr": "Fibre aéronautique",
+          "en": "Aeronautical fiber",
+          "es": "Fibra aeronáutica"
+        }
+      },
+      "impacts": {
+        "co2_reduction": {
+          "fr": "Réduction CO₂",
+          "en": "CO₂ Reduction",
+          "es": "Reducción CO₂"
+        },
+        "co2_detail": {
+          "fr": "1 100 tonnes évitées/an",
+          "en": "1,100 tonnes avoided/year",
+          "es": "1 100 toneladas evitadas/año"
+        },
+        "co2_equiv": {
+          "fr": "≈ 600 voitures × 15 000 km",
+          "en": "≈ 600 cars × 15,000 km",
+          "es": "≈ 600 coches × 15 000 km"
+        },
+        "noise_reduction": {
+          "fr": "Réduction du bruit",
+          "en": "Noise Reduction",
+          "es": "Reducción del ruido"
+        },
+        "noise_detail": {
+          "fr": "Pollution acoustique",
+          "en": "Acoustic pollution",
+          "es": "Contaminación acústica"
+        },
+        "whale_protection": {
+          "fr": "Protection des cétacés",
+          "en": "Cetacean protection",
+          "es": "Protección de cetáceos"
+        },
+        "cost_reduction": {
+          "fr": "Réduction coûts",
+          "en": "Cost Reduction",
+          "es": "Reducción de costes"
+        },
+        "fuel_expenses": {
+          "fr": "Dépenses de carburant",
+          "en": "Fuel expenses",
+          "es": "Gastos de combustible"
+        },
+        "operational": {
+          "fr": "Économie opérationnelle",
+          "en": "Operational savings",
+          "es": "Ahorro operacional"
+        },
+        "circular_design": {
+          "fr": "Conception circulaire",
+          "en": "Circular Design",
+          "es": "Diseño circular"
+        },
+        "recycled_materials": {
+          "fr": "Matériaux recyclés",
+          "en": "Recycled materials",
+          "es": "Materiales reciclados"
+        },
+        "regenerative": {
+          "fr": "Design régénératif",
+          "en": "Regenerative design",
+          "es": "Diseño regenerativo"
+        }
+      },
+      "conclusion": {
+        "fr": "Le premier ferry hybride éolico-électrique d'Espagne : un barco inteligente capable d'optimiser automatiquement ses voiles pour capter le vent, garantissant ponctualité et fiabilité tout en régénérant l'océan.",
+        "en": "Spain's first hybrid wind-electric ferry: a smart vessel capable of automatically optimizing its sails to capture the wind, ensuring punctuality and reliability while regenerating the ocean.",
+        "es": "El primer ferry híbrido eólico-eléctrico de España: un barco inteligente capaz de optimizar automáticamente sus velas para captar el viento, garantizando puntualidad y fiabilidad mientras regenera el océano."
+      }
+    },
+    "audio_section": {
+      "title": {
+        "fr": "L'expérience sonore",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Comparez le bruit d'un ferry conventionnel avec le silence apaisant d'InSail",
+        "en": "",
+        "es": ""
+      },
+      "conventional_title": {
+        "fr": "Ferry Conventionnel",
+        "en": "",
+        "es": ""
+      },
+      "conventional_description": {
+        "fr": "Moteur diesel bruyant et vibrations constantes",
+        "en": "",
+        "es": ""
+      },
+      "conventional_impact": {
+        "fr": "🔊 Impact négatif sur les écosystèmes marins",
+        "en": "",
+        "es": ""
+      },
+      "insail_title": {
+        "fr": "InSail80",
+        "en": "",
+        "es": ""
+      },
+      "insail_description": {
+        "fr": "Navigation silencieuse à la voile",
+        "en": "",
+        "es": ""
+      },
+      "insail_impact": {
+        "fr": "✓ 92% de réduction du bruit",
+        "en": "",
+        "es": ""
+      },
+      "did_you_know": {
+        "fr": "Saviez-vous que la pollution sonore des ferries perturbe la communication des baleines sur des centaines de kilomètres ? InSail offre une solution respectueuse de la vie marine.",
+        "en": "",
+        "es": ""
+      },
+      "audio_not_supported": {
+        "fr": "Votre navigateur ne supporte pas l'élément audio.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "cta_section": {
+      "title": {
+        "fr": "En savoir plus",
+        "en": "",
+        "es": ""
+      }
+    },
+    "gallery": {
+      "close": {
+        "fr": "Fermer",
+        "en": "",
+        "es": ""
+      },
+      "previous": {
+        "fr": "Image précédente",
+        "en": "",
+        "es": ""
+      },
+      "next": {
+        "fr": "Image suivante",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "contact_page": {
+    "meta": {
+      "title": {
+        "fr": "Contact - InSail",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Contactez InSail - Investisseurs, opérateurs maritimes, journalistes. Rejoignez la révolution de la mobilité maritime régénératrice.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "hero": {
+      "title": {
+        "fr": "Contact",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "Naviguons ensemble",
+        "en": "",
+        "es": ""
+      }
+    },
+    "form": {
+      "title": {
+        "fr": "Envoyez-nous un message",
+        "en": "",
+        "es": ""
+      },
+      "profile_label": {
+        "fr": "Vous êtes * :",
+        "en": "",
+        "es": ""
+      },
+      "profile_placeholder": {
+        "fr": "Sélectionnez votre profil",
+        "en": "",
+        "es": ""
+      },
+      "profile_investor": {
+        "fr": "Investisseur",
+        "en": "",
+        "es": ""
+      },
+      "profile_operator": {
+        "fr": "Opérateur maritime",
+        "en": "",
+        "es": ""
+      },
+      "profile_journalist": {
+        "fr": "Journaliste",
+        "en": "",
+        "es": ""
+      },
+      "profile_other": {
+        "fr": "Autre",
+        "en": "",
+        "es": ""
+      },
+      "name_label": {
+        "fr": "Nom * :",
+        "en": "",
+        "es": ""
+      },
+      "email_label": {
+        "fr": "Email * :",
+        "en": "",
+        "es": ""
+      },
+      "organization_label": {
+        "fr": "Organisation :",
+        "en": "",
+        "es": ""
+      },
+      "message_label": {
+        "fr": "Message * :",
+        "en": "",
+        "es": ""
+      },
+      "message_placeholder": {
+        "fr": "Votre message...",
+        "en": "",
+        "es": ""
+      },
+      "gdpr_label": {
+        "fr": "J'accepte que mes données soient utilisées pour répondre à ma demande. *",
+        "en": "",
+        "es": ""
+      },
+      "submit_button": {
+        "fr": "Envoyer",
+        "en": "",
+        "es": ""
+      },
+      "success_message": {
+        "fr": "Message envoyé ! Nous vous recontacterons bientôt.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "info": {
+      "title": {
+        "fr": "Coordonnées",
+        "en": "",
+        "es": ""
+      },
+      "email_title": {
+        "fr": "Email",
+        "en": "",
+        "es": ""
+      },
+      "email_value": {
+        "fr": "contact@insail.ocean",
+        "en": "",
+        "es": ""
+      },
+      "social_title": {
+        "fr": "Réseaux",
+        "en": "",
+        "es": ""
+      },
+      "social_value": {
+        "fr": "LinkedIn : InSail Technologies",
+        "en": "",
+        "es": ""
+      }
+    }
+  },
+
+  "ships_page": {
+    "meta": {
+      "title": {
+        "fr": "Vente de Navires & Co-développement - InSail",
+        "en": "",
+        "es": ""
+      },
+      "description": {
+        "fr": "Vente de Navires InSail - Co-développement sur mesure. Ferries, navettes, workboats hybrides vent-électrique. Licences technologiques.",
+        "en": "",
+        "es": ""
+      }
+    },
+    "codev_section": {
+      "title": {
+        "fr": "Co-développement sur mesure",
+        "en": "",
+        "es": ""
+      },
+      "subtitle": {
+        "fr": "InSail ne vend pas des navires standards, mais co-développe avec vous des solutions maritimes parfaitement adaptées à vos besoins opérationnels, en intégrant notre technologie hybride vent-électrique révolutionnaire.",
+        "en": "",
+        "es": ""
+      },
+      "philosophy_title": {
+        "fr": "Notre philosophie",
+        "en": "",
+        "es": ""
+      },
+      "philosophy_intro": {
+        "fr": "Chaque projet maritime est unique par ses contraintes géographiques, opérationnelles et économiques. Notre approche de co-développement garantit que votre investissement soit parfaitement optimisé :",
+        "en": "",
+        "es": ""
+      },
+      "philosophy_items": {
+        "item_1": {
+          "fr": "Analyse complète de vos besoins - Routes, passagers, contraintes météo",
+          "en": "",
+          "es": ""
+        },
+        "item_2": {
+          "fr": "Adaptation technologique - Dimensionnement optimal des systèmes hybrides",
+          "en": "",
+          "es": ""
+        },
+        "item_3": {
+          "fr": "Optimisation économique - ROI maximisé par réduction des coûts opérationnels",
+          "en": "",
+          "es": ""
+        },
+        "item_4": {
+          "fr": "Conformité réglementaire - Respect de toutes les normes internationales",
+          "en": "",
+          "es": ""
+        },
+        "item_5": {
+          "fr": "Accompagnement long terme - Formation, maintenance, évolutions",
+          "en": "",
+          "es": ""
+        }
+      },
+      "business_models_title": {
+        "fr": "Modèles d'affaires flexibles",
+        "en": "",
+        "es": ""
+      },
+      "business_models_intro": {
+        "fr": "Nous proposons plusieurs approches pour s'adapter à votre situation financière et stratégique :",
+        "en": "",
+        "es": ""
+      },
+      "business_models": {
+        "model_1": {
+          "fr": "Vente complète - Livraison clés en main avec formation",
+          "en": "",
+          "es": ""
+        },
+        "model_2": {
+          "fr": "Licence technologique - Vous construisez avec nos spécifications",
+          "en": "",
+          "es": ""
+        },
+        "model_3": {
+          "fr": "Partenariat industriel - Co-investissement et partage des revenus",
+          "en": "",
+          "es": ""
+        },
+        "model_4": {
+          "fr": "Leasing opérationnel - Location longue durée avec maintenance incluse",
+          "en": "",
+          "es": ""
+        },
+        "model_5": {
+          "fr": "Retrofit existant - Conversion de votre flotte actuelle",
+          "en": "",
+          "es": ""
+        }
+      }
+    },
+    "ship_types_section": {
+      "title": {
+        "fr": "Gamme de navires adaptables",
+        "en": "",
+        "es": ""
+      },
+      "ferry_title": {
+        "fr": "Ferries Hybrides",
+        "en": "",
+        "es": ""
+      },
+      "ferry_subtitle": {
+        "fr": "Liaisons régulières inter-îles ou côtières",
+        "en": "",
+        "es": ""
+      },
+      "ferry_specs_title": {
+        "fr": "Spécifications adaptables :",
+        "en": "",
+        "es": ""
+      },
+      "ferry_specs": {
+        "length": {
+          "fr": "Longueur : 20-40 mètres selon capacité",
+          "en": "",
+          "es": ""
+        },
+        "passengers": {
+          "fr": "Passagers : 50-200 personnes",
+          "en": "",
+          "es": ""
+        },
+        "vehicles": {
+          "fr": "Véhicules : 0-30 voitures selon configuration",
+          "en": "",
+          "es": ""
+        },
+        "autonomy": {
+          "fr": "Autonomie : 4-12 heures selon conditions météo",
+          "en": "",
+          "es": ""
+        },
+        "speed": {
+          "fr": "Vitesse : 12-18 nœuds optimisée consommation",
+          "en": "",
+          "es": ""
+        }
+      },
+      "ferry_example": {
+        "fr": "Exemple projet : Ferry 150 pax pour liaison Corse-Sardaigne, économies carburant 75% vs ferry classique",
+        "en": "",
+        "es": ""
+      },
+      "shuttle_title": {
+        "fr": "Navettes Premium",
+        "en": "",
+        "es": ""
+      },
+      "shuttle_subtitle": {
+        "fr": "Transport rapide et confortable pour courtes distances",
+        "en": "",
+        "es": ""
+      },
+      "shuttle_specs_title": {
+        "fr": "Spécifications adaptables :",
+        "en": "",
+        "es": ""
+      },
+      "shuttle_specs": {
+        "length": {
+          "fr": "Longueur : 12-25 mètres",
+          "en": "",
+          "es": ""
+        },
+        "passengers": {
+          "fr": "Passagers : 12-80 personnes",
+          "en": "",
+          "es": ""
+        },
+        "configuration": {
+          "fr": "Configuration : Premium, Business ou Mixte",
+          "en": "",
+          "es": ""
+        },
+        "speed": {
+          "fr": "Vitesse : 15-22 nœuds",
+          "en": "",
+          "es": ""
+        },
+        "autonomy": {
+          "fr": "Autonomie : 2-6 heures",
+          "en": "",
+          "es": ""
+        }
+      },
+      "shuttle_example": {
+        "fr": "Exemple projet : Navette 40 pax pour resort Maldives, navigation 80% silencieuse pour protection récifs",
+        "en": "",
+        "es": ""
+      },
+      "workboat_title": {
+        "fr": "Workboats Professionnels",
+        "en": "",
+        "es": ""
+      },
+      "workboat_subtitle": {
+        "fr": "Navires de service et de travail maritime",
+        "en": "",
+        "es": ""
+      },
+      "workboat_applications_title": {
+        "fr": "Applications :",
+        "en": "",
+        "es": ""
+      },
+      "workboat_applications": {
+        "app_1": {
+          "fr": "Recherche scientifique - Laboratoires embarqués",
+          "en": "",
+          "es": ""
+        },
+        "app_2": {
+          "fr": "Maintenance offshore - Éoliennes, aquaculture",
+          "en": "",
+          "es": ""
+        },
+        "app_3": {
+          "fr": "Surveillance maritime - Patrouille écologique",
+          "en": "",
+          "es": ""
+        },
+        "app_4": {
+          "fr": "Transport de fret - Approvisionnement îles",
+          "en": "",
+          "es": ""
+        },
+        "app_5": {
+          "fr": "Services portuaires - Pilotage, remorquage léger",
+          "en": "",
+          "es": ""
+        }
+      },
+      "workboat_example": {
+        "fr": "Exemple projet : Navire de recherche 15m pour parc marin, collecte données sans perturbation faune",
+        "en": "",
+        "es": ""
+      }
+    }
+  }
+}

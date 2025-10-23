@@ -31,10 +31,35 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Event listener pour le dropdown de profil
+    const contactReasonSelect = document.getElementById('contactReason');
+    console.log('contactReason element:', contactReasonSelect);
+    
+    if (contactReasonSelect) {
+        console.log('Event listener ajouté au dropdown');
+        contactReasonSelect.addEventListener('change', function(e) {
+            console.log('Dropdown changé! Valeur:', e.target.value);
+            handleFormChange(e.target.value);
+        });
+    } else {
+        console.error('Élément contactReason non trouvé!');
+    }
+    
+    // Gestionnaire du formulaire de contact
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Formulaire soumis');
+            document.getElementById('confirmationMessage').style.display = 'block';
+            contactForm.reset();
+        });
+    }
 });
 
 function handleFormChange(selectedValue) {
-    console.log('Profil sélectionné:', selectedValue);
+    console.log('handleFormChange appelée avec:', selectedValue);
     
     // Éléments du formulaire
     const messageLabel = document.getElementById('messageLabel');
