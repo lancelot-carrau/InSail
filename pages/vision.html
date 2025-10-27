@@ -27,19 +27,30 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.7), rgba(0, 48, 95, 0.7)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Notre Vision</h1>
-                <p class="hero-subtitle">Régénérer, pas seulement préserver</p>
+    <!-- Hero Section Organique -->
+    <section class="hero-organic" style="position: relative; min-height: 80vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(30, 74, 107, 0.95) 0%, rgba(64, 181, 160, 0.9) 100%), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto; padding-top: 80px; padding-bottom: 100px;">
+                <h1 style="font-size: 3.5rem; color: white; margin-bottom: var(--spacing-md);">Notre Vision</h1>
+                <p class="hero-subtitle" style="font-size: 1.8rem; color: white; font-weight: 500; margin-bottom: var(--spacing-xl);">
+                    Régénérer, pas seulement préserver
+                </p>
+                <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                    Créer une mobilité maritime qui régénère activement les écosystèmes océaniques
+                </p>
             </div>
+        </div>
+        <!-- Vague blanche en bas du hero -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 150px; z-index: 1;">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                <path d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#ffffff"/>
+            </svg>
         </div>
     </section>
 
-    <!-- Mission principale -->
-    <section class="section particles-section">
-        <div class="container">
+    <!-- Mission principale - BLANC -->
+    <section class="section particles-section" style="background: white; padding: var(--spacing-xxl) 0;">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="text-center mb-xl">
                 <h2>Notre philosophie</h2>
                 <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Créer un impact positif sur les écosystèmes océaniques.</p>
@@ -47,25 +58,21 @@
             
             <div class="problem-solution-container">
                 <div class="problem-solution-card problem-card">
-                    <div class="problem-solution-icon">⚠️</div>
                     <h3>Le problème</h3>
                     <div class="problem-solution-items">
                         <div class="problem-solution-item">
-                            <div class="item-icon problem-icon">🔊</div>
                             <div class="item-content">
                                 <h4>Pollution sonore et carbone</h4>
                                 <p>Les moteurs diesel perturbent la faune marine</p>
                             </div>
                         </div>
                         <div class="problem-solution-item">
-                            <div class="item-icon problem-icon">🐋</div>
                             <div class="item-content">
                                 <h4>Impact sur la biodiversité</h4>
                                 <p>Perturbation des corridors biologiques</p>
                             </div>
                         </div>
                         <div class="problem-solution-item">
-                            <div class="item-icon problem-icon">⚙️</div>
                             <div class="item-content">
                                 <h4>Technologies obsolètes</h4>
                                 <p>Systèmes énergivores et polluants</p>
@@ -77,25 +84,21 @@
                 <div class="problem-solution-arrow">→</div>
                 
                 <div class="problem-solution-card solution-card">
-                    <div class="problem-solution-icon">✨</div>
                     <h3>Notre solution</h3>
                     <div class="problem-solution-items">
                         <div class="problem-solution-item">
-                            <div class="item-icon solution-icon">🔇</div>
                             <div class="item-content">
                                 <h4>Navigation silencieuse</h4>
                                 <p>-89% de bruit pour protéger la vie marine</p>
                             </div>
                         </div>
                         <div class="problem-solution-item">
-                            <div class="item-icon solution-icon">⛵</div>
                             <div class="item-content">
                                 <h4>80% du temps sous voile</h4>
                                 <p>Propulsion naturelle et renouvelable</p>
                             </div>
                         </div>
                         <div class="problem-solution-item">
-                            <div class="item-icon solution-icon">♻️</div>
                             <div class="item-content">
                                 <h4>Matériaux recyclés</h4>
                                 <p>Économie circulaire et durabilité</p>
@@ -107,50 +110,110 @@
         </div>
     </section>
 
-    <!-- Les trois piliers -->
-    <section class="section section-alt" style="background: linear-gradient(rgba(245, 247, 250, 0.95), rgba(245, 247, 250, 0.95)), url('https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover;">
+    <!-- Wave Divider vers gris -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block;">
+            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#f5f7fa"/>
+        </svg>
+    </div>
+
+    <!-- Les principes - GRIS avec design épuré et élégant -->
+    <section class="section section-alt" style="background: var(--light-grey); padding: var(--spacing-xxl) 0;">
         <div class="container">
             <div class="text-center mb-xl">
                 <h2>Nos principes</h2>
+                <p style="font-size: 1.05rem; color: var(--text-light); max-width: 700px; margin: var(--spacing-md) auto 0;">
+                    Quatre piliers pour une mobilité maritime régénérative
+                </p>
             </div>
             
-            <div class="grid grid-4">
-                <div class="card text-center principle-card">
-                    <div class="principle-icon">♻️</div>
-                    <h3>Économie Circulaire</h3>
-                    <p>Matériaux recyclés et recyclables. Conception modulaire et durable.</p>
+            <!-- Grid de cartes avec numéros -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-xl); max-width: 1100px; margin: 0 auto;">
+                
+                <!-- Carte 1 -->
+                <div style="background: white; padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; transition: all 0.4s ease;">
+                    <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; font-weight: 900; color: rgba(64, 181, 160, 0.08); line-height: 1;">01</div>
+                    <div style="position: relative; z-index: 1;">
+                        <div style="width: 60px; height: 4px; background: linear-gradient(90deg, var(--turquoise), var(--mint-green)); margin-bottom: var(--spacing-md); border-radius: 2px;"></div>
+                        <h3 style="font-size: 1.6rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Économie Circulaire</h3>
+                        <p style="color: var(--text-light); line-height: 1.8; font-size: 1.05rem;">Matériaux recyclés et recyclables. Conception modulaire et durable pour minimiser l'impact environnemental.</p>
+                    </div>
                 </div>
                 
-                <div class="card text-center principle-card">
-                    <div class="principle-icon">🌿</div>
-                    <h3>Biomimétisme</h3>
-                    <p>Inspiration des formes naturelles pour une navigation efficace.</p>
+                <!-- Carte 2 -->
+                <div style="background: white; padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; transition: all 0.4s ease; transform: translateY(40px);">
+                    <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; font-weight: 900; color: rgba(30, 74, 107, 0.08); line-height: 1;">02</div>
+                    <div style="position: relative; z-index: 1;">
+                        <div style="width: 60px; height: 4px; background: linear-gradient(90deg, var(--ocean-blue), var(--turquoise)); margin-bottom: var(--spacing-md); border-radius: 2px;"></div>
+                        <h3 style="font-size: 1.6rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Biomimétisme</h3>
+                        <p style="color: var(--text-light); line-height: 1.8; font-size: 1.05rem;">Inspiration des formes naturelles et des systèmes océaniques pour une navigation efficace et harmonieuse.</p>
+                    </div>
                 </div>
                 
-                <div class="card text-center principle-card">
-                    <div class="principle-icon">✨</div>
-                    <h3>Impact Positif</h3>
-                    <p>Respect des corridors biologiques et monitoring environnemental.</p>
+                <!-- Carte 3 -->
+                <div style="background: white; padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; transition: all 0.4s ease;">
+                    <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; font-weight: 900; color: rgba(104, 213, 200, 0.08); line-height: 1;">03</div>
+                    <div style="position: relative; z-index: 1;">
+                        <div style="width: 60px; height: 4px; background: linear-gradient(90deg, var(--mint-green), var(--turquoise)); margin-bottom: var(--spacing-md); border-radius: 2px;"></div>
+                        <h3 style="font-size: 1.6rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Impact Positif</h3>
+                        <p style="color: var(--text-light); line-height: 1.8; font-size: 1.05rem;">Respect des corridors biologiques et monitoring environnemental pour régénérer les écosystèmes marins.</p>
+                    </div>
                 </div>
                 
-                <div class="card text-center principle-card">
-                    <div class="principle-icon">💡</div>
-                    <h3>Innovation</h3>
-                    <p>R&D continue et technologies évolutives.</p>
+                <!-- Carte 4 -->
+                <div style="background: white; padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; transition: all 0.4s ease; transform: translateY(40px);">
+                    <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; font-weight: 900; color: rgba(64, 181, 160, 0.08); line-height: 1;">04</div>
+                    <div style="position: relative; z-index: 1;">
+                        <div style="width: 60px; height: 4px; background: linear-gradient(90deg, var(--turquoise), var(--ocean-blue)); margin-bottom: var(--spacing-md); border-radius: 2px;"></div>
+                        <h3 style="font-size: 1.6rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Innovation</h3>
+                        <p style="color: var(--text-light); line-height: 1.8; font-size: 1.05rem;">R&D continue et technologies évolutives pour repousser les limites de la mobilité maritime durable.</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
+    
+    <style>
+        section.section-alt > .container > div:last-child > div {
+            cursor: pointer;
+        }
+        section.section-alt > .container > div:last-child > div:hover {
+            transform: translateY(-8px) !important;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+        }
+    </style>
+    
+    <style>
+        .btn-glass-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30, 74, 107, 0.3);
+        }
+        
+        .btn-glass-secondary:hover {
+            background: var(--ocean-blue);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30, 74, 107, 0.3);
+        }
+    </style>
 
-    <!-- Call to Action -->
-    <section class="section">
+    <!-- Wave Divider vers blanc -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block;">
+            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#ffffff"/>
+        </svg>
+    </div>
+
+    <!-- Call to Action - BLANC -->
+    <section class="section" style="background: white; padding: var(--spacing-xxl) 0;">
         <div class="container text-center">
             <h2>Ensemble</h2>
             <p class="mb-xl" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto var(--spacing-xl);">Un réseau de navires qui régénère les océans.</p>
             
-            <div class="mt-xl">
-                <a href="projet-canaries.html" class="btn btn-primary">Le projet pilote</a>
-                <a href="contact.html" class="btn btn-secondary" style="margin-left: var(--spacing-sm);">Contact</a>
+            <div class="mt-xl" style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                <a href="projet-canaries.html" class="btn-glass-primary" style="background: var(--ocean-blue); color: white; display: inline-block; padding: 14px 32px; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease;">Le projet pilote</a>
+                <a href="contact.html" class="btn-glass-secondary" style="border: 2px solid var(--ocean-blue); color: var(--ocean-blue); background: transparent; display: inline-block; padding: 14px 32px; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease;">Nous contacter</a>
             </div>
         </div>
     </section>
