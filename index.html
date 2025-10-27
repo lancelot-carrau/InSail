@@ -31,148 +31,163 @@
         </div>
     </header>
 
-    <!-- Section Hero -->
-    <section class="hero-section main-hero" style="position: relative; overflow: hidden; color: white;">
-        <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 1; object-fit: cover;">
+    <!-- Section Hero Organique -->
+    <section class="hero-organic" style="position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden;">
+        <!-- Vidéo background -->
+        <video autoplay muted loop playsinline class="hero-video">
             <source src="assets/Videos/video_render_insail_vue_aerienne.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas les vidéos HTML5.
         </video>
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0, 48, 95, 0.3), rgba(0, 48, 95, 0.5)); z-index: 2;"></div>
-        <div class="hero-content" style="position: relative; z-index: 3;">
-            <h1 class="hero-title">InSail</h1>
-            <p class="hero-subtitle"><span class="dynamic-word" id="dynamic-word">Regenerative</span> Ocean Mobility</p>
-            <p class="hero-description">
-                La navigation maritime réinventée pour régénérer les océans.
-            </p>
-            <div class="hero-cta">
-                <a href="pages/projet-canaries.html" class="btn btn-primary">Découvrir</a>
-                <a href="pages/contact.html" class="btn btn-secondary">Contact</a>
+        
+        <!-- Overlay gradient -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Contenu héro asymétrique -->
+        <div class="container" style="position: relative; z-index: 3;">
+            <div class="hero-organic-grid">
+                <!-- Partie gauche: Titre principal -->
+                <div class="hero-left">
+                    <div class="hero-title-wrapper">
+                        <h1 class="hero-title-organic">InSail<span class="title-dot">.</span></h1>
+                        <p class="hero-subtitle-organic" style="font-size: 1.8rem; color: white; font-weight: 500; text-align: center; margin-top: var(--spacing-md);">
+                            <span class="dynamic-word" id="dynamic-word">Regenerative</span> Ocean Mobility
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Partie droite: Card glassmorphism -->
+                <div class="hero-right">
+                    <div class="glass-card">
+                        <h2 class="glass-card-title" style="color: white;">La navigation maritime réinventée</h2>
+                        <p class="glass-card-text">
+                            Combiner la puissance du vent avec l'efficacité de l'électrique pour créer une mobilité maritime qui régénère les océans.
+                        </p>
+                        <div class="glass-card-stats">
+                            <div class="mini-stat">
+                                <span class="mini-stat-number">-99%</span>
+                                <span class="mini-stat-label">CO₂</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-stat-number">80%</span>
+                                <span class="mini-stat-label">Voile</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-stat-number">-89%</span>
+                                <span class="mini-stat-label">Bruit</span>
+                            </div>
+                        </div>
+                        <div class="glass-card-cta" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                            <a href="pages/projet-canaries.html" class="btn-glass-primary">Découvrir le projet</a>
+                            <a href="pages/contact.html" class="btn-glass-secondary">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- Section Notre Vision -->
-    <section class="section">
+    <!-- Wave Divider vers blanc -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block;">
+            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#ffffff"/>
+        </svg>
+    </div>
+
+    <!-- Section Notre Vision - BLANC -->
+    <section class="section vision-organic" style="background: white; padding: var(--spacing-xxl) 0;">
         <div class="container">
-            <div class="grid grid-2">
-                <div>
+            <div class="vision-organic-layout">
+                <!-- Image principale avec forme organique -->
+                <div class="vision-image-blob">
                     <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
                          alt="Navigation sous voile" 
-                         style="width: 100%; height: 300px; object-fit: cover; border-radius: var(--border-radius-lg); margin-bottom: var(--spacing-md);">
-                    <h2>Une nouvelle ère</h2>
-                    <p>La mobilité maritime peut devenir un vecteur de régénération océanique. InSail combine la force du vent et des technologies propres pour un transport maritime performant et respectueux.</p>
-                    <div class="text-center">
-                        <a href="pages/vision.html" class="nav-internal">Notre vision →</a>
-                    </div>
+                         class="blob-image">
                 </div>
-                <div class="approach-cards-wrapper">
-                    <div class="approach-cards">
-                        <div class="approach-card">
-                            <div class="approach-icon">♻️</div>
-                            <h3>Économie circulaire</h3>
-                            <p>Matériaux recyclés et conception durable</p>
-                        </div>
-                        <div class="approach-card">
-                            <div class="approach-icon">🌿</div>
-                            <h3>Biomimétisme</h3>
-                            <p>Inspiré par la nature et l'océan</p>
-                        </div>
-                        <div class="approach-card">
-                            <div class="approach-icon">✨</div>
-                            <h3>Impact positif</h3>
-                            <p>Régénération des écosystèmes marins</p>
-                        </div>
-                    </div>
+                
+                <!-- Contenu texte -->
+                <div class="vision-content">
+                    <h2 class="vision-title">Une nouvelle ère maritime</h2>
+                    <p class="vision-text">
+                        La mobilité maritime peut devenir un vecteur de régénération océanique. InSail combine la force du vent et des technologies propres pour un transport maritime performant et respectueux.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section class="section section-alt particles-section">
-        <div class="container text-center">
-            <h2>Nos solutions</h2>
-            <p class="mb-xl">Du conseil stratégique à la construction de navires hybrides.</p>
             
-            <div class="services-grid">
-                <div class="service-card card">
-                    <img src="assets/images/insail80/insail80-ext-front.jpg" 
-                         alt="Projet Pilote InSail.One" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3>Projet Pilote</h3>
-                    <p>Notre vitrine technologique aux Canaries.</p>
-                    <a href="pages/projet-canaries.html" class="nav-internal">Découvrir →</a>
+            <!-- Approche cards - Style simplifié sans icônes -->
+            <div class="approach-grid-organic">
+                <div class="approach-card-organic" style="text-align: center;">
+                    <h3 style="white-space: nowrap;">Économie circulaire</h3>
+                    <p>Matériaux recyclés et conception durable</p>
                 </div>
                 
-                <div class="service-card card">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                         alt="Conseil stratégique" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3>Conseil</h3>
-                    <p>Accompagnement stratégique pour la transition maritime.</p>
-                    <a href="pages/services.html" class="nav-internal">En savoir plus →</a>
+                <div class="approach-card-organic" style="text-align: center;">
+                    <h3 style="white-space: nowrap;">Biomimétisme</h3>
+                    <p>Inspiré par la nature et l'océan</p>
                 </div>
                 
-                <div class="service-card card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                         alt="Resorts et tourisme" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3>Resorts</h3>
-                    <p>Navettes premium pour un tourisme régénératif.</p>
-                    <a href="pages/services.html" class="nav-internal">En savoir plus →</a>
+                <div class="approach-card-organic" style="text-align: center;">
+                    <h3 style="white-space: nowrap;">Impact positif</h3>
+                    <p>Régénération des écosystèmes marins</p>
                 </div>
-                
-                <div class="service-card card">
-                    <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                         alt="Vente de navires" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3>Vente de Navires</h3>
-                    <p>Co-développement de navires hybrides sur mesure.</p>
-                    <a href="pages/services.html" class="nav-internal">En savoir plus →</a>
-                </div>
+            </div>
+            
+            <!-- Bouton CTA centré -->
+            <div style="text-align: center; margin-top: var(--spacing-xxl);">
+                <a href="pages/vision.html" class="btn-glass-primary" style="background: var(--ocean-blue); color: white; font-size: 1.05rem;">
+                    Découvrir notre vision complète
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Section Performance et Impact -->
-    <section class="section innovation-bg">
+    <!-- Wave Divider vers gris -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block;">
+            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#f5f7fa"/>
+        </svg>
+    </div>
+
+    <!-- Section Services - GRIS -->
+    <section class="section services-organic" style="background: var(--light-grey); padding: var(--spacing-xxl) 0;">
         <div class="container">
-            <div class="text-center mb-xl">
-                <h2>L'InSail.One</h2>
-                <p>Notre catamaran hybride de 24,4m en action aux Canaries</p>
+            <!-- Header section -->
+            <div class="section-header-organic text-center">
+                <h2>Nos services</h2>
+                <p class="section-subtitle">Du conseil stratégique à la construction de navires hybrides sur mesure</p>
             </div>
             
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">⛵</div>
-                    <span class="stat-number">80%</span>
-                    <span class="stat-label">wind propulsion</span>
+            <div class="services-cta-center">
+                <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: var(--spacing-xl); max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;">
+                    Projets pilotes, conseil stratégique, navettes premium pour resorts, et co-développement de navires hybrides sur mesure.
+                </p>
+                <div style="text-align: center;">
+                    <a href="pages/services.html" class="btn-glass-primary" style="background: var(--ocean-blue); color: white; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px;">
+                        Découvrir nos services
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">🌱</div>
-                    <span class="stat-number">-99%</span>
-                    <span class="stat-label">CO₂</span>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">🔇</div>
-                    <span class="stat-number">-89%</span>
-                    <span class="stat-label">noise</span>
-                </div>
-            </div>
-            
-            <div class="text-center mt-xl">
-                <a href="pages/projet-canaries.html" class="btn btn-primary">Le projet</a>
             </div>
         </div>
     </section>
 
-    <!-- Le saviez-vous ? - Version page d'accueil -->
-    <section class="section" style="background: var(--light-grey);">
+    <!-- Le saviez-vous ? - GRIS (continue) -->
+    <section class="section" style="background: var(--light-grey); padding: var(--spacing-xxl) 0;">
         <div class="container">
             <div class="did-you-know-carousel did-you-know-compact" style="margin-top: 0; max-width: 900px; margin-left: auto; margin-right: auto; padding: var(--spacing-lg); background: white; border-radius: var(--border-radius-lg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
                 <div style="display: flex; align-items: center; justify-content: center; gap: var(--spacing-md);">
-                    <!-- Icône -->
-                    <div style="font-size: 2rem; flex-shrink: 0;">💡</div>
+                    <!-- Icône SVG minimaliste -->
+                    <div style="flex-shrink: 0;">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="var(--turquoise)" stroke-width="2" opacity="0.3"/>
+                            <path d="M20 15v10M20 28v2" stroke="var(--ocean-blue)" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     
                     <!-- Contenu du carrousel -->
                     <div style="flex: 1; max-width: 700px; position: relative;">
@@ -210,12 +225,15 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="section" style="background: linear-gradient(rgba(0, 48, 95, 0.85), rgba(0, 119, 145, 0.85)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover; color: white;">
-        <div class="container text-center">
-            <h2 style="color: white;">Naviguons ensemble</h2>
-            <p class="mb-xl" style="color: white;">Découvrons comment transformer votre vision maritime.</p>
-            <a href="pages/contact.html" class="btn btn-primary">Contact</a>
+    <!-- Call to Action - Style organique -->
+    <section class="cta-organic">
+        <div class="cta-organic-bg"></div>
+        <div class="container">
+            <div class="cta-organic-content">
+                <h2>Naviguons ensemble</h2>
+                <p>Découvrons comment transformer votre vision maritime.</p>
+                <a href="pages/contact.html" class="btn-glass-primary">Contactez-nous</a>
+            </div>
         </div>
     </section>
 
