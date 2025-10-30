@@ -27,13 +27,21 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.4), rgba(0, 48, 95, 0.4)), url('../assets/images/insail80/insail80-hero.jpg') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Projet Pilote aux Canaries</h1>
-                <p class="hero-subtitle">L'InSail.One en action</p>
+    <!-- Hero Organique -->
+    <section class="hero-organic" style="position: relative; min-height: 75vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(30,74,107,0.95) 0%, rgba(64,181,160,0.9) 100%), url('../assets/images/insail80/insail80-hero.jpg') center/cover;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto; padding-top: 80px; padding-bottom: 120px;">
+                <h1 style="font-size: 3.2rem; color: white; margin-bottom: var(--spacing-md);">Projet Pilote aux Canaries</h1>
+                <p style="font-size: 1.5rem; color: white; font-weight: 500; margin-bottom: var(--spacing-xl);">L'InSail.One en action</p>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">Tenerife - La Gomera : un catamaran hybride de 24,4m dans un corridor à haute biodiversité.</p>
             </div>
+        </div>
+        
+        <!-- Vague blanche organique en bas du hero -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 150px; z-index: 1;">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                <path d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#ffffff"/>
+            </svg>
         </div>
     </section>
 
@@ -45,12 +53,102 @@
                 <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Un catamaran hybride de 24,4m dans un corridor à haute biodiversité.</p>
             </div>
             
-            <!-- Vidéo drone vue aérienne -->
-            <div class="drone-video-container" style="margin-bottom: var(--spacing-xl);">
-                <video autoplay muted loop controls style="width: 100%; border-radius: var(--border-radius-lg); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);">
-                    <source src="../assets/Videos/video_render_insail_vue_aerienne.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <!-- Blueprint technique avec spécifications -->
+            <div style="background: linear-gradient(135deg, rgba(30,74,107,0.03) 0%, rgba(64,181,160,0.03) 100%); padding: var(--spacing-xxl) var(--spacing-lg); border-radius: var(--border-radius-lg); margin-bottom: var(--spacing-xl);">
+                <h3 style="text-align: center; color: var(--ocean-blue); margin-bottom: var(--spacing-lg); font-size: 1.8rem;">InSail.One - Spécifications Techniques</h3>
+                
+                <!-- Container avec blueprint et specs -->
+                <div style="display: grid; grid-template-columns: 1fr 2fr 1fr; gap: var(--spacing-lg); align-items: start; max-width: 1400px; margin: 0 auto;">
+                    
+                    <!-- Colonne gauche - Dimensions & Propulsion -->
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <!-- Dimensions -->
+                        <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 4px 16px rgba(30,74,107,0.08);">
+                            <h4 style="font-size: 1.1rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">📏</span> Dimensions
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                                <div><strong>Longueur:</strong> 24,4 m (80 ft)</div>
+                                <div><strong>Largeur:</strong> 11,5 m</div>
+                                <div><strong>Tirant d'eau:</strong> 1,8 m</div>
+                                <div><strong>Déplacement:</strong> 38 tonnes</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Propulsion -->
+                        <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 4px 16px rgba(64,181,160,0.08);">
+                            <h4 style="font-size: 1.1rem; color: var(--turquoise); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">⚡</span> Propulsion
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                                <div><strong>Voiles:</strong> 2 × WISAMO 170m²</div>
+                                <div><strong>Surface totale:</strong> 340 m²</div>
+                                <div><strong>Moteurs:</strong> 2 × 260 kW élec.</div>
+                                <div><strong>Vitesse:</strong> 12 nœuds</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Énergie -->
+                        <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 4px 16px rgba(104,213,200,0.08);">
+                            <h4 style="font-size: 1.1rem; color: var(--mint-green); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">🔋</span> Énergie
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                                <div><strong>Batteries:</strong> 520 kWh LiFePO4</div>
+                                <div><strong>Solaire:</strong> 150 m² (72 kWc)</div>
+                                <div><strong>Production:</strong> 180 kWh/voyage</div>
+                                <div><strong>Autonomie:</strong> 100% électrique</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne centrale - Blueprint -->
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: 0 8px 32px rgba(30,74,107,0.12);">
+                        <img src="../assets/images/insail80/InSailOneBlueprint.png" alt="InSail.One - Blueprint technique complet" style="width: 100%; height: auto; display: block;">
+                    </div>
+                    
+                    <!-- Colonne droite - Capacités & Impact -->
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <!-- Capacités -->
+                        <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 4px 16px rgba(30,74,107,0.08);">
+                            <h4 style="font-size: 1.1rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">👥</span> Capacités
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                                <div><strong>Passagers:</strong> 120 personnes</div>
+                                <div><strong>Équipage:</strong> 4 membres</div>
+                                <div><strong>Cabines:</strong> 8 (2-4 pers.)</div>
+                                <div><strong>Confort:</strong> Salons climatisés</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Performance -->
+                        <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 4px 16px rgba(64,181,160,0.08);">
+                            <h4 style="font-size: 1.1rem; color: var(--turquoise); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">🧭</span> Performance
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                                <div><strong>Navigation:</strong> 80% sous voile</div>
+                                <div><strong>Route:</strong> Tenerife - La Gomera</div>
+                                <div><strong>Distance:</strong> 28 km (2h30)</div>
+                                <div><strong>Fréquence:</strong> 4 traversées/jour</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Impact -->
+                        <div style="background: linear-gradient(135deg, rgba(77,182,172,0.15), rgba(104,213,200,0.1)); padding: var(--spacing-md); border-radius: var(--border-radius-md); border: 2px solid var(--turquoise);">
+                            <h4 style="font-size: 1.1rem; color: var(--turquoise); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.3rem;">🌱</span> Impact
+                            </h4>
+                            <div style="font-size: 0.9rem; color: var(--dark-grey); line-height: 1.8; font-weight: 500;">
+                                <div><strong style="color: var(--turquoise);">99%</strong> réduction CO₂</div>
+                                <div><strong style="color: var(--turquoise);">92%</strong> réduction bruit</div>
+                                <div><strong style="color: var(--turquoise);">1 100 t</strong> CO₂ évitées/an</div>
+                                <div style="font-size: 0.8rem; margin-top: 4px; color: var(--text-light);">≈ 600 voitures × 15 000 km</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Slider de galerie -->
@@ -81,161 +179,6 @@
                 </div>
                 <div class="slider-dots"></div>
             </div>
-            
-            <!-- Infographie Navire + Impact -->
-            <div class="infographic-section" style="margin-top: var(--spacing-xl);">
-                <h3 style="text-align: center; margin-bottom: var(--spacing-md);">InSail.One en chiffres</h3>
-                <p style="color: var(--text-light); margin-bottom: var(--spacing-xl); text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Le premier ferry hybride éolico-électrique d'Espagne : données techniques et impact environnemental
-                </p>
-                
-                <!-- Infographie principale -->
-                <div class="ship-infographic" style="background: linear-gradient(135deg, rgba(30, 74, 107, 0.03) 0%, rgba(64, 181, 160, 0.03) 100%); padding: var(--spacing-xl); border-radius: var(--border-radius-lg); margin-bottom: var(--spacing-lg);">
-                    
-                    <!-- Section Navire -->
-                    <div style="margin-bottom: var(--spacing-xl);">
-                        <h4 style="color: var(--ocean-blue); font-size: 1.5rem; margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 2rem;">⛵</span> Le Navire
-                        </h4>
-                        
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-md);">
-                            <!-- Dimensions -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">📏</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--ocean-blue);">24,4m</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Longueur</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">Catamaran 80 pieds</div>
-                            </div>
-                            
-                            <!-- Capacité -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">👥</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--ocean-blue);">120</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Passagers</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">12 nœuds de vitesse</div>
-                            </div>
-                            
-                            <!-- Voiles -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">🪂</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--turquoise);">340m²</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Voiles automatisées</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">2 × WISAMO 170m²</div>
-                            </div>
-                            
-                            <!-- Solaire -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">☀️</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--turquoise);">150m²</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Panneaux solaires</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">72 kWc - 180 kWh/voyage</div>
-                            </div>
-                            
-                            <!-- Batteries -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">🔋</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--ocean-blue);">520 kWh</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Batteries LiFePO4</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">1 260 Ah</div>
-                            </div>
-                            
-                            <!-- Moteurs -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">⚡</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--ocean-blue);">2×260kW</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Moteurs électriques</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">Propulsion d'appoint</div>
-                            </div>
-                            
-                            <!-- Navigation -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">🧭</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--turquoise);">80%</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Temps sous voile</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">Navigation automatisée</div>
-                            </div>
-                            
-                            <!-- Matériaux -->
-                            <div class="info-card" style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 8px;">♻️</div>
-                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--mint-green);">99%</div>
-                                <div style="font-size: 0.9rem; color: var(--dark-grey);">Carbone recyclé</div>
-                                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">Fibre aéronautique</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Séparateur visuel -->
-                    <div style="display: flex; align-items: center; justify-content: center; margin: var(--spacing-xl) 0;">
-                        <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, var(--turquoise), transparent);"></div>
-                        <div style="padding: 0 var(--spacing-md); font-size: 2rem;">🌊</div>
-                        <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, var(--turquoise), transparent);"></div>
-                    </div>
-                    
-                    <!-- Section Impact -->
-                    <div>
-                        <h4 style="color: var(--turquoise); font-size: 1.5rem; margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 2rem;">🌱</span> L'Impact Environnemental
-                        </h4>
-                        
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--spacing-md);">
-                            <!-- CO2 -->
-                            <div class="impact-card" style="background: linear-gradient(135deg, rgba(77, 182, 172, 0.1), rgba(77, 182, 172, 0.05)); padding: var(--spacing-lg); border-radius: var(--border-radius-md); border: 2px solid var(--turquoise); text-align: center;">
-                                <div style="font-size: 2.5rem; margin-bottom: 8px;">🌍</div>
-                                <div style="font-size: 2.2rem; font-weight: 700; color: var(--turquoise);">99%</div>
-                                <div style="font-size: 1rem; font-weight: 600; color: var(--ocean-blue); margin-top: 8px;">Réduction CO₂</div>
-                                <div style="font-size: 0.85rem; color: var(--dark-grey); margin-top: 8px; line-height: 1.4;">
-                                    <strong>1 100 tonnes</strong> évitées/an<br>
-                                    <span style="font-size: 0.8rem;">≈ 600 voitures × 15 000 km</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Bruit -->
-                            <div class="impact-card" style="background: linear-gradient(135deg, rgba(77, 182, 172, 0.1), rgba(77, 182, 172, 0.05)); padding: var(--spacing-lg); border-radius: var(--border-radius-md); border: 2px solid var(--turquoise); text-align: center;">
-                                <div style="font-size: 2.5rem; margin-bottom: 8px;">🔇</div>
-                                <div style="font-size: 2.2rem; font-weight: 700; color: var(--turquoise);">92%</div>
-                                <div style="font-size: 1rem; font-weight: 600; color: var(--ocean-blue); margin-top: 8px;">Réduction du bruit</div>
-                                <div style="font-size: 0.85rem; color: var(--dark-grey); margin-top: 8px; line-height: 1.4;">
-                                    Pollution acoustique<br>
-                                    <span style="font-size: 0.8rem;">Protection des cétacés</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Coûts -->
-                            <div class="impact-card" style="background: linear-gradient(135deg, rgba(77, 182, 172, 0.1), rgba(77, 182, 172, 0.05)); padding: var(--spacing-lg); border-radius: var(--border-radius-md); border: 2px solid var(--turquoise); text-align: center;">
-                                <div style="font-size: 2.5rem; margin-bottom: 8px;">💰</div>
-                                <div style="font-size: 2.2rem; font-weight: 700; color: var(--turquoise);">78%</div>
-                                <div style="font-size: 1rem; font-weight: 600; color: var(--ocean-blue); margin-top: 8px;">Réduction coûts</div>
-                                <div style="font-size: 0.85rem; color: var(--dark-grey); margin-top: 8px; line-height: 1.4;">
-                                    Dépenses de carburant<br>
-                                    <span style="font-size: 0.8rem;">Économie opérationnelle</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Circularité -->
-                            <div class="impact-card" style="background: linear-gradient(135deg, rgba(77, 182, 172, 0.1), rgba(77, 182, 172, 0.05)); padding: var(--spacing-lg); border-radius: var(--border-radius-md); border: 2px solid var(--turquoise); text-align: center;">
-                                <div style="font-size: 2.5rem; margin-bottom: 8px;">♻️</div>
-                                <div style="font-size: 2.2rem; font-weight: 700; color: var(--turquoise);">100%</div>
-                                <div style="font-size: 1rem; font-weight: 600; color: var(--ocean-blue); margin-top: 8px;">Conception circulaire</div>
-                                <div style="font-size: 0.85rem; color: var(--dark-grey); margin-top: 8px; line-height: 1.4;">
-                                    Matériaux recyclés<br>
-                                    <span style="font-size: 0.8rem;">Design régénératif</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Citation finale -->
-                    <div style="margin-top: var(--spacing-xl); padding: var(--spacing-lg); background: white; border-radius: var(--border-radius-md); border-left: 4px solid var(--turquoise); box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                        <p style="font-size: 1rem; color: var(--ocean-blue); margin: 0; line-height: 1.6; font-style: italic;">
-                            <strong style="color: var(--turquoise);">Le premier ferry hybride éolico-électrique d'Espagne</strong> : 
-                            un navire intelligent capable d'optimiser automatiquement ses voiles pour capter le vent, 
-                            garantissant ponctualité et fiabilité tout en régénérant l'océan.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
     </section>
 
@@ -248,40 +191,176 @@
         <div class="lightbox-counter"></div>
     </div>
 
-    <!-- Comparaison Audio -->
-    <section class="section">
+    <!-- Comparaison Audio - Design Organique -->
+    <section class="section" style="background: var(--light-grey);">
         <div class="container">
             <div class="text-center mb-xl">
-                <h2>L'expérience sonore</h2>
-                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+                <h2 style="font-size: 2.2rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md);">L'expérience sonore</h2>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: var(--text-light);">
                     Comparez le bruit d'un ferry conventionnel avec le silence apaisant d'InSail
                 </p>
             </div>
             
-            <div class="grid grid-2" style="gap: var(--spacing-xl);">
-                <div class="card text-center">
-                    <h3 style="color: var(--ocean-blue); margin-bottom: var(--spacing-md);">Ferry Conventionnel</h3>
-                    <p style="margin-bottom: var(--spacing-lg);">Moteur diesel bruyant et vibrations constantes</p>
-                    <audio controls style="width: 100%; margin-bottom: var(--spacing-md);">
-                        <source src="../assets/audio/Conventional ferry.mp3" type="audio/mpeg">
-                        Votre navigateur ne supporte pas l'élément audio.
-                    </audio>
-                    <p style="font-size: 0.9rem; color: var(--dark-grey);">🔊 Impact négatif sur les écosystèmes marins</p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-xl); max-width: 1000px; margin: 0 auto;">
+                <!-- Ferry Conventionnel -->
+                <div style="background: white; padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 32px rgba(0,0,0,0.08); position: relative;">
+                    <div style="position: absolute; top: -15px; right: 30px; background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; color: white; font-weight: 600; box-shadow: 0 4px 12px rgba(231,76,60,0.3);">
+                        🔊 Bruyant
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Ferry Conventionnel</h3>
+                    <p style="color: var(--text-light); margin-bottom: var(--spacing-lg); line-height: 1.6;">Moteur diesel bruyant et vibrations constantes</p>
+                    
+                    <!-- Lecteur audio personnalisé -->
+                    <div style="background: linear-gradient(135deg, rgba(231,76,60,0.05), rgba(192,57,43,0.03)); padding: var(--spacing-md); border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
+                        <audio id="audioConventional" style="display: none;">
+                            <source src="../assets/audio/Conventional ferry.mp3" type="audio/mpeg">
+                        </audio>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <button id="playConventional" style="background: #e74c3c; border: none; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(231,76,60,0.2);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div style="flex: 1;">
+                                <div style="height: 6px; background: rgba(231,76,60,0.15); border-radius: 3px; overflow: hidden;">
+                                    <div id="progressConventional" style="height: 100%; width: 0%; background: linear-gradient(90deg, #e74c3c, #c0392b); transition: width 0.1s linear;"></div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.8rem; color: var(--text-light);">
+                                    <span id="currentTimeConventional">0:00</span>
+                                    <span id="durationConventional">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(231,76,60,0.08); padding: var(--spacing-md); border-radius: var(--border-radius-md); border-left: 3px solid #e74c3c;">
+                        <p style="font-size: 0.95rem; color: var(--dark-grey); margin: 0; line-height: 1.5;">
+                            <strong>Impact négatif :</strong> Perturbe la communication des cétacés sur des centaines de kilomètres
+                        </p>
+                    </div>
                 </div>
                 
-                <div class="card text-center" style="border: 2px solid var(--turquoise);">
-                    <h3 style="color: var(--turquoise); margin-bottom: var(--spacing-md);">InSail.One</h3>
-                    <p style="margin-bottom: var(--spacing-lg);">Navigation silencieuse à la voile</p>
-                    <audio controls style="width: 100%; margin-bottom: var(--spacing-md);">
-                        <source src="../assets/audio/InSail.mp3" type="audio/mpeg">
-                        Votre navigateur ne supporte pas l'élément audio.
-                    </audio>
-                    <p style="font-size: 0.9rem; color: var(--turquoise); font-weight: 600;">✓ 92% de réduction du bruit</p>
+                <!-- InSail.One -->
+                <div style="background: linear-gradient(135deg, rgba(64,181,160,0.08), rgba(104,213,200,0.05)); padding: var(--spacing-xxl); border-radius: var(--border-radius-lg); box-shadow: 0 8px 32px rgba(64,181,160,0.12); border: 2px solid var(--turquoise); position: relative;">
+                    <div style="position: absolute; top: -15px; right: 30px; background: linear-gradient(135deg, var(--turquoise), var(--mint-green)); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; color: white; font-weight: 600; box-shadow: 0 4px 12px rgba(64,181,160,0.3);">
+                        ✓ Silencieux
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--turquoise); margin-bottom: var(--spacing-md); font-weight: 700;">InSail.One</h3>
+                    <p style="color: var(--text-light); margin-bottom: var(--spacing-lg); line-height: 1.6;">Navigation silencieuse à la voile</p>
+                    
+                    <!-- Lecteur audio personnalisé -->
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md); box-shadow: 0 4px 16px rgba(64,181,160,0.08);">
+                        <audio id="audioInsail" style="display: none;">
+                            <source src="../assets/audio/InSail.mp3" type="audio/mpeg">
+                        </audio>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <button id="playInsail" style="background: linear-gradient(135deg, var(--turquoise), var(--mint-green)); border: none; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(64,181,160,0.3);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div style="flex: 1;">
+                                <div style="height: 6px; background: rgba(64,181,160,0.15); border-radius: 3px; overflow: hidden;">
+                                    <div id="progressInsail" style="height: 100%; width: 0%; background: linear-gradient(90deg, var(--turquoise), var(--mint-green)); transition: width 0.1s linear;"></div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.8rem; color: var(--text-light);">
+                                    <span id="currentTimeInsail">0:00</span>
+                                    <span id="durationInsail">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--border-radius-md); border-left: 3px solid var(--turquoise);">
+                        <p style="font-size: 0.95rem; color: var(--dark-grey); margin: 0; line-height: 1.5;">
+                            <strong style="color: var(--turquoise);">92% de réduction du bruit :</strong> Protection active des écosystèmes marins
+                        </p>
+                    </div>
                 </div>
             </div>
             
+            <script>
+                // Lecteur Ferry Conventionnel
+                const audioConv = document.getElementById('audioConventional');
+                const playBtnConv = document.getElementById('playConventional');
+                const progressConv = document.getElementById('progressConventional');
+                const currentTimeConv = document.getElementById('currentTimeConventional');
+                const durationConv = document.getElementById('durationConventional');
+                
+                playBtnConv.addEventListener('click', () => {
+                    if (audioConv.paused) {
+                        audioConv.play();
+                        playBtnConv.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>';
+                    } else {
+                        audioConv.pause();
+                        playBtnConv.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+                    }
+                });
+                
+                audioConv.addEventListener('timeupdate', () => {
+                    const progress = (audioConv.currentTime / audioConv.duration) * 100;
+                    progressConv.style.width = progress + '%';
+                    currentTimeConv.textContent = formatTime(audioConv.currentTime);
+                });
+                
+                audioConv.addEventListener('loadedmetadata', () => {
+                    durationConv.textContent = formatTime(audioConv.duration);
+                });
+                
+                audioConv.addEventListener('ended', () => {
+                    playBtnConv.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+                });
+                
+                // Lecteur InSail
+                const audioIns = document.getElementById('audioInsail');
+                const playBtnIns = document.getElementById('playInsail');
+                const progressIns = document.getElementById('progressInsail');
+                const currentTimeIns = document.getElementById('currentTimeInsail');
+                const durationIns = document.getElementById('durationInsail');
+                
+                playBtnIns.addEventListener('click', () => {
+                    if (audioIns.paused) {
+                        audioIns.play();
+                        playBtnIns.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>';
+                    } else {
+                        audioIns.pause();
+                        playBtnIns.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+                    }
+                });
+                
+                audioIns.addEventListener('timeupdate', () => {
+                    const progress = (audioIns.currentTime / audioIns.duration) * 100;
+                    progressIns.style.width = progress + '%';
+                    currentTimeIns.textContent = formatTime(audioIns.currentTime);
+                });
+                
+                audioIns.addEventListener('loadedmetadata', () => {
+                    durationIns.textContent = formatTime(audioIns.duration);
+                });
+                
+                audioIns.addEventListener('ended', () => {
+                    playBtnIns.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+                });
+                
+                function formatTime(seconds) {
+                    const mins = Math.floor(seconds / 60);
+                    const secs = Math.floor(seconds % 60);
+                    return mins + ':' + (secs < 10 ? '0' : '') + secs;
+                }
+            </script>
+            
+            <!-- CTA vers BlueSpeed (compact) -->
+            <div style="max-width: 700px; margin: var(--spacing-xl) auto var(--spacing-lg); text-align: center;">
+                <a href="https://bluespeeds.org/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, rgba(30,74,107,0.06), rgba(64,181,160,0.06)); padding: 12px 24px; border-radius: 50px; text-decoration: none; border: 1.5px solid rgba(64,181,160,0.25); transition: all 0.3s ease; box-shadow: 0 2px 12px rgba(30,74,107,0.08);" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 16px rgba(30,74,107,0.12)'; this.style.borderColor='var(--turquoise)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(30,74,107,0.08)'; this.style.borderColor='rgba(64,181,160,0.25)';">
+                    <span style="font-size: 0.9rem; color: var(--ocean-blue); font-weight: 500;">🌊 Impact du bruit maritime : recherches IFAW</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            
             <!-- Carrousel "Le saviez-vous ?" -->
-            <div class="did-you-know-carousel" style="margin-top: var(--spacing-xl); padding: var(--spacing-lg); background: rgba(77, 182, 172, 0.05); border-radius: var(--border-radius-lg); position: relative; overflow: hidden;">
+            <div class="did-you-know-carousel" style="margin-top: var(--spacing-lg); padding: var(--spacing-lg); background: rgba(77, 182, 172, 0.05); border-radius: var(--border-radius-lg); position: relative; overflow: hidden;">
                 <div style="display: flex; align-items: center; justify-content: center; gap: var(--spacing-md);">
                     <!-- Icône -->
                     <div style="font-size: 2.5rem; flex-shrink: 0;">💡</div>
@@ -296,7 +375,7 @@
                         </div>
                         <div class="dyk-slide" data-slide="1">
                             <p style="font-size: 1rem; color: var(--ocean-blue); margin: 0; line-height: 1.6;">
-                                <strong>Saviez-vous que</strong> les voiles WISAMO d'InSail.One se déploient automatiquement en 3 minutes et peuvent générer jusqu'à 80% de la propulsion nécessaire ?
+                                <strong>Saviez-vous que</strong> les voiles WISAMO d'InSail.One se déploient automatiquement en 3 minutes et peuvent générer jusqu'à 100% de la propulsion nécessaire ?
                             </p>
                         </div>
                         <div class="dyk-slide" data-slide="2">
@@ -330,6 +409,8 @@
                     <span class="dyk-dot" data-slide="2" style="width: 10px; height: 10px; border-radius: 50%; background: var(--medium-grey); cursor: pointer; transition: all 0.3s ease;"></span>
                     <span class="dyk-dot" data-slide="3" style="width: 10px; height: 10px; border-radius: 50%; background: var(--medium-grey); cursor: pointer; transition: all 0.3s ease;"></span>
                     <span class="dyk-dot" data-slide="4" style="width: 10px; height: 10px; border-radius: 50%; background: var(--medium-grey); cursor: pointer; transition: all 0.3s ease;"></span>
+                </div>
+            </div>
                 </div>
             </div>
         </div>

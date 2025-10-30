@@ -27,13 +27,20 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.8), rgba(0, 48, 95, 0.8)), url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Nos Solutions</h1>
-                <p class="hero-subtitle">Du conseil à la navigation</p>
+    <!-- Hero Organique -->
+    <section class="hero-organic" style="position: relative; min-height: 70vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(30,74,107,0.95) 0%, rgba(64,181,160,0.9) 100%), url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto; padding-top: 80px; padding-bottom: 100px;">
+                <h1 style="font-size: 3.2rem; color: white; margin-bottom: var(--spacing-md);">Nos Solutions</h1>
+                <p class="hero-subtitle" style="font-size: 1.5rem; color: white; font-weight: 500; margin-bottom: var(--spacing-xl);">Du conseil à la navigation</p>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">Une approche 360° pour accélérer la transition maritime régénérative.</p>
             </div>
+        </div>
+        <!-- Vague blanche organique en bas du hero -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 120px; z-index: 1;">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                <path d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#ffffff"/>
+            </svg>
         </div>
     </section>
 
@@ -41,47 +48,45 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-xl">
+                <h2 style="font-size: 2.2rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md);">Nos services</h2>
                 <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: var(--text-light);">
                     Du conseil stratégique à la construction de navires hybrides, découvrez notre approche complète de la mobilité maritime régénératrice.
                 </p>
             </div>
-            
-            <div class="services-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-lg); max-width: 1400px; margin: 0 auto;">
-                <!-- 1. Projet Pilote -->
-                <div class="service-card card" style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                    <img src="../assets/images/insail80/insail80-ext-front.jpg" 
-                         alt="InSail.One - Projet Pilote Canaries" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3 style="margin-bottom: var(--spacing-sm);">Projet Pilote</h3>
-                    <p style="margin-bottom: var(--spacing-lg); min-height: 60px;">Notre vitrine technologique aux Canaries.</p>
-                    <a href="projet-canaries.html" class="btn btn-primary" style="display: inline-block;">Découvrir</a>
+            <!-- Grille organique alternée -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-xl); max-width: 1100px; margin: 0 auto;">
+                <!-- Projet Pilote -->
+                <div style="background: white; border-radius: 48% 52% 60% 40% / 45% 55% 45% 55%; box-shadow: 0 8px 32px rgba(30,74,107,0.08); padding: var(--spacing-xl); display: flex; align-items: center; gap: var(--spacing-lg);">
+                    <img src="../assets/images/insail80/insail80-ext-front.jpg" alt="InSail.One - Projet Pilote Canaries" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 16px rgba(64,181,160,0.12);">
+                    <div>
+                        <h3 style="font-size: 1.3rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); font-weight: 700;">Projet Pilote</h3>
+                        <p style="color: var(--text-light); margin-bottom: var(--spacing-md);">Notre vitrine technologique aux Canaries.</p>
+                        <a href="projet-canaries.html" class="btn btn-glass-primary" style="margin-top: var(--spacing-sm);">Découvrir</a>
+                    </div>
                 </div>
-                
-                <!-- 2. Navires à la vente -->
-                <div class="service-card card" style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                    <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                         alt="Navires à la vente" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3 style="margin-bottom: var(--spacing-sm);">Navires à la vente</h3>
-                    <p style="margin-bottom: var(--spacing-md);">Co-développement de navires hybrides sur mesure.</p>
+                <!-- Navires à la vente -->
+                <div style="background: var(--light-grey); border-radius: 52% 48% 40% 60% / 55% 45% 55% 45%; box-shadow: 0 8px 32px rgba(64,181,160,0.08); padding: var(--spacing-xl); display: flex; align-items: center; gap: var(--spacing-lg);">
+                    <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Navires à la vente" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 16px rgba(30,74,107,0.12);">
+                    <div>
+                        <h3 style="font-size: 1.3rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); font-weight: 700;">Co-conception de navires</h3>
+                        <p style="color: var(--text-light); margin-bottom: var(--spacing-md);">Concevez votre navire innovant en collaboration avec nos experts.</p>
+                    </div>
                 </div>
-                
-                <!-- 3. Conseil -->
-                <div class="service-card card" style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                         alt="Conseil stratégique" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3 style="margin-bottom: var(--spacing-sm);">Conseil</h3>
-                    <p style="margin-bottom: var(--spacing-md);">Accompagnement stratégique pour la transition maritime durable.</p>
+                <!-- Conseil -->
+                <div style="background: white; border-radius: 45% 55% 58% 42% / 52% 48% 52% 48%; box-shadow: 0 8px 32px rgba(104,213,200,0.08); padding: var(--spacing-xl); display: flex; align-items: center; gap: var(--spacing-lg);">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Conseil stratégique" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 16px rgba(104,213,200,0.12);">
+                    <div>
+                        <h3 style="font-size: 1.3rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); font-weight: 700;">Conseil</h3>
+                        <p style="color: var(--text-light); margin-bottom: var(--spacing-md);">Accompagnement stratégique pour la transition maritime durable.</p>
+                    </div>
                 </div>
-                
-                <!-- 4. Resorts -->
-                <div class="service-card card" style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                         alt="Resorts et tourisme" 
-                         style="width: 100%; height: 180px; object-fit: cover; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
-                    <h3 style="margin-bottom: var(--spacing-sm);">Resorts</h3>
-                    <p style="margin-bottom: var(--spacing-md);">Navettes premium pour un tourisme régénératif.</p>
+                <!-- Resorts -->
+                <div style="background: var(--light-grey); border-radius: 55% 45% 42% 58% / 48% 52% 48% 52%; box-shadow: 0 8px 32px rgba(64,181,160,0.08); padding: var(--spacing-xl); display: flex; align-items: center; gap: var(--spacing-lg);">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Resorts et tourisme" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 16px rgba(64,181,160,0.12);">
+                    <div>
+                        <h3 style="font-size: 1.3rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm); font-weight: 700;">Resorts</h3>
+                        <p style="color: var(--text-light); margin-bottom: var(--spacing-md);">Navettes premium pour un tourisme régénératif.</p>
+                    </div>
                 </div>
             </div>
         </div>
