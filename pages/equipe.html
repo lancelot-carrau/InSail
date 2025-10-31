@@ -27,32 +27,32 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.8), rgba(0, 48, 95, 0.8)), url('../assets/images/backgrounds/bg_equipe.png') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
-        <div class="container">
-            <div class="hero-content">
-                <h1>L'Équipe InSail</h1>
-                <p class="hero-subtitle">
-                    Des co-fondateurs unis par une vision commune : révolutionner la mobilité maritime
-                </p>
+    <!-- Hero Organique -->
+    <section class="hero-organic" style="position: relative; min-height: 70vh; display: flex; align-items: center; background: linear-gradient(135deg, rgba(30,74,107,0.95) 0%, rgba(64,181,160,0.9) 100%), url('../assets/images/backgrounds/bg_equipe.png') center/cover;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto; padding-top: 80px; padding-bottom: 100px;">
+                <h1 style="font-size: 3.2rem; color: white; margin-bottom: var(--spacing-md);">L'Équipe InSail</h1>
+                <p style="font-size: 1.5rem; color: white; font-weight: 500; margin-bottom: var(--spacing-xl);">Experts unis par une vision commune</p>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">De l'entrepreneuriat à l'ingénierie, des sciences marines à la navigation hauturière : révolutionner la mobilité maritime.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Vision d'équipe -->
-    <section class="section particles-section">
-        <div class="container text-center">
-            <h2>L'expertise au service de l'océan</h2>
-            <p class="mb-xl" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto var(--spacing-xl);">
-                L'équipe InSail réunit des profils complémentaires partageant une passion commune pour l'océan et l'innovation. 
-                De l'entrepreneuriat à l'ingénierie, des sciences marines à la navigation hauturière, chaque expertise contribue à notre vision régénératrice.
-            </p>
+        <!-- Vague blanche organique en bas du hero -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 120px; z-index: 1;">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                <path d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#ffffff"/>
+            </svg>
         </div>
     </section>
 
     <!-- Portraits des co-fondateurs -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
+            <div class="text-center mb-xl">
+                <h2 style="font-size: 2.2rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md);">Les co-fondateurs</h2>
+                <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto; color: var(--text-light);">
+                    L'équipe InSail réunit des profils complémentaires partageant une passion commune pour l'océan et l'innovation.
+                </p>
+            </div>
             <div class="team-grid">
                 <!-- Tanguy - CEO -->
                 <div class="team-member">
@@ -173,112 +173,136 @@
         </div>
     </section>
 
-    <!-- L'expérience maritime -->
-    <section class="section" style="background: linear-gradient(135deg, rgba(30, 74, 107, 0.02) 0%, rgba(64, 181, 160, 0.02) 100%);">
+    <!-- L'expérience maritime (version condensée) -->
+    <section class="section section-alt">
         <div class="container">
             <div class="text-center mb-xl">
-                <h2>L'expérience de la mer</h2>
-                <p style="font-size: 1.1rem; max-width: 900px; margin: 0 auto; line-height: 1.8;">
-                    L'expérience de <strong>vie en mer</strong> de Tanguy, Florian et Mercedes nourrit directement l'innovation InSail
+                <h2>De l'Océan à l'Innovation</h2>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+                    Notre expérience en navigation hauturière forge notre approche de l'innovation maritime
                 </p>
             </div>
             
-            <!-- Format libre avec illustration -->
-            <div style="max-width: 1400px; margin: 0 auto;">
-                <!-- Leçons de la Mer -->
-                <div style="margin-bottom: var(--spacing-xxl); position: relative;">
-                    <h3 style="color: var(--ocean-blue); font-size: 1.8rem; margin: 0 0 var(--spacing-lg) 0; text-align: center;">Leçons de la Mer</h3>
+            <!-- Version condensée en 2 colonnes -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xxl); max-width: 1100px; margin: 0 auto;">
+                <!-- Colonne Leçons de la Mer -->
+                <div>
+                    <div style="text-align: center; margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--turquoise); font-size: 1.5rem; margin-bottom: var(--spacing-sm);">Leçons de la Mer</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-light);">Ce que l'océan nous enseigne</p>
+                    </div>
                     
-                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-lg);">
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--turquoise); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">⚓</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Fiabilité absolue</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Les systèmes doivent fonctionner dans toutes les conditions</p>
-                                </div>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Fiabilité absolue</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Systèmes robustes en toutes conditions</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--turquoise); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">⚡</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Efficacité énergétique</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Chaque ressource compte lors des navigations prolongées</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Efficacité énergétique</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Chaque ressource compte en mer</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--turquoise); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">🌍</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Respect de l'environnement</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">L'océan exige humilité et adaptation</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Respect environnemental</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Humilité face à l'océan</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--turquoise); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">🧭</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Autonomie</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">La vie à bord développe l'ingéniosité et la résilience</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Autonomie</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Ingéniosité et résilience</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Flèche de transition -->
-                <div style="text-align: center; margin: var(--spacing-xl) 0; font-size: 2.5rem; color: var(--turquoise);">
-                    ⬇
-                </div>
-                
-                <!-- Innovation Transférée -->
-                <div style="max-width: 1400px; margin: 0 auto;">
-                    <h3 style="color: var(--ocean-blue); font-size: 1.8rem; margin: 0 0 var(--spacing-lg) 0; text-align: center;">Innovation Transférée</h3>
+                <!-- Colonne Innovation Transférée -->
+                <div>
+                    <div style="text-align: center; margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--ocean-blue); font-size: 1.5rem; margin-bottom: var(--spacing-sm);">Innovation Transférée</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-light);">Notre approche appliquée</p>
+                    </div>
                     
-                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-lg);">
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--ocean-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">🎨</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Conception adaptée</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Design pensé pour la vie à bord au quotidien</p>
-                                </div>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(30,74,107,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ocean-blue)" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Conception adaptée</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Navires optimisés par usage</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--ocean-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">🤖</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Systèmes intelligents</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Automatisation pour faciliter la navigation</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(30,74,107,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ocean-blue)" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Systèmes intelligents</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Automatisation avancée</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--ocean-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">🪂</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Voilures performantes</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Optimisation pour différentes conditions</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(30,74,107,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ocean-blue)" stroke-width="2">
+                                    <path d="M23 6l-9.5 9.5-5-5L1 18"/>
+                                    <polyline points="17 6 23 6 23 12"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Voilures performantes</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Solutions éprouvées en extrême</p>
                             </div>
                         </div>
                         
-                        <div class="ocean-lesson-card" style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius-lg); border-left: 4px solid var(--ocean-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: start; gap: var(--spacing-sm);">
-                                <span style="font-size: 1.8rem; flex-shrink: 0;">📡</span>
-                                <div>
-                                    <h4 style="color: var(--ocean-blue); margin: 0 0 8px 0;">Monitoring avancé</h4>
-                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Capteurs et télémétrie pour la sécurité</p>
-                                </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-md); background: white; border-radius: var(--border-radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                            <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(30,74,107,0.1); border-radius: 50%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ocean-blue)" stroke-width="2">
+                                    <path d="M12 20h9"/>
+                                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--ocean-blue); margin: 0 0 4px 0; font-size: 1rem;">Monitoring avancé</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">Données temps réel</p>
                             </div>
                         </div>
                     </div>
@@ -314,7 +338,11 @@
                 <!-- Cartes de valeurs disposées en cercle -->
                 <div class="philosophy-card philosophy-card-1">
                     <div class="philosophy-card-inner">
-                        <div class="philosophy-icon" style="color: var(--ocean-blue);">⚓</div>
+                        <div style="width: 48px; height: 48px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
                         <h3>Excellence</h3>
                         <p>Expertise technique de haut niveau, forgée par l'expérience et la passion</p>
                     </div>
@@ -322,7 +350,12 @@
                 
                 <div class="philosophy-card philosophy-card-2">
                     <div class="philosophy-card-inner">
-                        <div class="philosophy-icon" style="color: var(--turquoise);">🌊</div>
+                        <div style="width: 48px; height: 48px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
                         <h3>Impact Positif</h3>
                         <p>Chaque décision évaluée selon son impact environnemental et social</p>
                     </div>
@@ -330,7 +363,14 @@
                 
                 <div class="philosophy-card philosophy-card-3">
                     <div class="philosophy-card-inner">
-                        <div class="philosophy-icon" style="color: var(--mint-green);">🤝</div>
+                        <div style="width: 48px; height: 48px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
                         <h3>Collaboration</h3>
                         <p>La diversité des expertises crée une dynamique unique</p>
                     </div>
@@ -338,7 +378,12 @@
                 
                 <div class="philosophy-card philosophy-card-4">
                     <div class="philosophy-card-inner">
-                        <div class="philosophy-icon" style="color: var(--ocean-blue);">💡</div>
+                        <div style="width: 48px; height: 48px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; background: rgba(64,181,160,0.1); border-radius: 50%;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--turquoise)" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m-2 2l-4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m-2-2l-4.2-4.2"/>
+                            </svg>
+                        </div>
                         <h3>Innovation</h3>
                         <p>Repousser les limites pour créer des solutions révolutionnaires</p>
                     </div>
@@ -354,85 +399,80 @@
     </section>
 
     <!-- Rejoindre l'équipe -->
-    <section class="section" style="background: linear-gradient(to bottom, white 0%, var(--light-grey) 100%);">
+    <section class="section" style="background: var(--light-grey);">
         <div class="container">
             <div class="text-center" style="margin-bottom: var(--spacing-xxl);">
                 <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">Rejoindre l'aventure InSail</h2>
                 <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.8; color: var(--text-light);">
-                    InSail recherche constamment de nouveaux talents partageant notre vision d'une mobilité maritime régénératrice. Ingénieurs, marins, chercheurs, entrepreneurs... chaque expertise peut contribuer à révolutionner l'industrie maritime.
+                    InSail recherche constamment de nouveaux talents partageant notre vision d'une mobilité maritime régénératrice.
                 </p>
             </div>
             
-            <!-- Section Profils recherchés -->
-            <div style="margin-bottom: var(--spacing-xxl);">
-                <div style="text-align: center; margin-bottom: var(--spacing-xl);">
-                    <span style="display: inline-block; background: linear-gradient(135deg, var(--ocean-blue), var(--turquoise)); color: white; padding: 8px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Profils recherchés</span>
-                </div>
+            <!-- Section Partenaires & Investisseurs -->
+            <div style="background: white; border-radius: var(--border-radius-lg); padding: var(--spacing-xxl); margin-bottom: var(--spacing-xxl); box-shadow: 0 8px 32px rgba(30,74,107,0.08); position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(64,181,160,0.08), transparent); border-radius: 50%;"></div>
+                <div style="position: absolute; bottom: -40px; left: -40px; width: 180px; height: 180px; background: radial-gradient(circle, rgba(30,74,107,0.06), transparent); border-radius: 50%;"></div>
                 
-                <div class="join-grid">
-                    <div class="join-card">
-                        <div class="join-card-icon">🔧</div>
-                        <h4>Ingénieurs maritimes</h4>
-                        <p>Conception navale et systèmes hybrides propulsion-voile</p>
+                <div style="position: relative; z-index: 2; text-align: center;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, var(--turquoise), var(--mint-green)); padding: 8px 24px; border-radius: 30px; margin-bottom: var(--spacing-lg);">
+                        <span style="font-size: 0.9rem; color: white; font-weight: 600; letter-spacing: 0.5px;">PARTENAIRES & INVESTISSEURS</span>
                     </div>
+                    <h3 style="font-size: 2rem; color: var(--ocean-blue); margin-bottom: var(--spacing-md); font-weight: 700;">Rejoignez-nous pour rendre cette vision globale</h3>
+                    <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto var(--spacing-xl); line-height: 1.7; color: var(--text-light);">
+                        Ensemble, accélérons la transition maritime vers un modèle régénératif et déployons InSail à l'échelle mondiale.
+                    </p>
                     
-                    <div class="join-card">
-                        <div class="join-card-icon">🌍</div>
-                        <h4>Experts environnementaux</h4>
-                        <p>Monitoring océanique et mesure d'impact écologique</p>
-                    </div>
-                    
-                    <div class="join-card">
-                        <div class="join-card-icon">⚓</div>
-                        <h4>Capitaines et skippers</h4>
-                        <p>Expertise opérationnelle et navigation hauturière</p>
-                    </div>
-                    
-                    <div class="join-card">
-                        <div class="join-card-icon">💼</div>
-                        <h4>Business developers</h4>
-                        <p>Développement commercial et stratégie partenariale</p>
+                    <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" style="display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--ocean-blue), #1a3d5c); color: white; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 6px 24px rgba(30,74,107,0.25);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 32px rgba(30,74,107,0.35)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 24px rgba(30,74,107,0.25)';">
+                            Devenir partenaire
+                        </a>
+                        <a href="contact.html" style="display: inline-flex; align-items: center; gap: 12px; background: white; color: var(--ocean-blue); padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(30,74,107,0.12); border: 2px solid var(--turquoise);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 24px rgba(30,74,107,0.18)'; this.style.background='var(--turquoise)'; this.style.color='white';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(30,74,107,0.12)'; this.style.background='white'; this.style.color='var(--ocean-blue)';">
+                            Investir dans InSail
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <!-- Section Ce que nous offrons -->
-            <div style="margin-bottom: var(--spacing-xxl);">
-                <div style="text-align: center; margin-bottom: var(--spacing-xl);">
-                    <span style="display: inline-block; background: linear-gradient(135deg, var(--turquoise), var(--mint-green)); color: white; padding: 8px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Ce que nous offrons</span>
+            <!-- Section Profils recherchés (simplifié) -->
+            <div style="margin-bottom: var(--spacing-xl);">
+                <div style="text-align: center; margin-bottom: var(--spacing-lg);">
+                    <h3 style="font-size: 1.5rem; color: var(--ocean-blue); margin-bottom: var(--spacing-sm);">Profils recherchés</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-light);">Ingénieurs, marins, chercheurs, entrepreneurs...</p>
                 </div>
                 
-                <div class="offer-grid">
-                    <div class="offer-card">
-                        <div class="offer-card-number">01</div>
-                        <h4>Mission d'impact</h4>
-                        <p>Contribuer concrètement à la régénération océanique et participer à une révolution maritime durable</p>
-                    </div>
-                    
-                    <div class="offer-card">
-                        <div class="offer-card-number">02</div>
-                        <h4>Innovation de pointe</h4>
-                        <p>Travailler sur les technologies maritimes de demain avec des systèmes hybrides avancés</p>
-                    </div>
-                    
-                    <div class="offer-card">
-                        <div class="offer-card-number">03</div>
-                        <h4>Équipe d'exception</h4>
-                        <p>Collaborer avec des experts passionnés aux parcours complémentaires et inspirants</p>
-                    </div>
-                    
-                    <div class="offer-card">
-                        <div class="offer-card-number">04</div>
-                        <h4>Projection internationale</h4>
-                        <p>Développement sur des marchés globaux avec des opportunités d'expansion mondiale</p>
-                    </div>
+                <div style="max-width: 900px; margin: 0 auto; background: white; border-radius: var(--border-radius-md); padding: var(--spacing-xl); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+                    <ul style="list-style: none; padding: 0; margin: 0; columns: 2; column-gap: var(--spacing-xl);">
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Ingénieurs maritimes (conception navale, systèmes hybrides)
+                        </li>
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Experts environnementaux (monitoring océanique, impact)
+                        </li>
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Capitaines et skippers (navigation hauturière)
+                        </li>
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Business developers (stratégie commerciale)
+                        </li>
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Ingénieurs en énergies renouvelables
+                        </li>
+                        <li style="padding: 10px 0; padding-left: 28px; position: relative; color: var(--dark-grey); break-inside: avoid;">
+                            <span style="position: absolute; left: 0; color: var(--turquoise); font-weight: 700;">•</span>
+                            Experts en économie circulaire et biomimétisme
+                        </li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- Boutons d'action -->
-            <div class="text-center" style="margin-top: var(--spacing-xxl);">
-                <a href="contact.html" class="btn" style="padding: 16px 40px; font-size: 1.1rem; margin: 0 var(--spacing-sm) var(--spacing-sm);">Nous rejoindre</a>
-                <a href="projet-canaries.html" class="btn btn-secondary" style="padding: 16px 40px; font-size: 1.1rem; margin: 0 var(--spacing-sm) var(--spacing-sm);">Voir notre projet en action</a>
+            <!-- Bouton d'action -->
+            <div class="text-center" style="margin-top: var(--spacing-xl);">
+                <a href="contact.html" class="btn btn-glass-primary" style="padding: 16px 40px; font-size: 1.1rem;">Nous contacter</a>
             </div>
         </div>
     </section>
