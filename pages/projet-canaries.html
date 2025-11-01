@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projet Pilote InSail aux Canaries - L'InSail.One, catamaran hybride de 24,4m sur la route Tenerife-La Gomera. 80% sous voile, 99% de réduction carbone.">
+    <meta name="description" content="Projet Pilote InSail aux Canaries - L'InSail.One, catamaran hybride de 24m, 120 passagers, sur la route Tenerife-La Gomera. 80% sous voile, 99% de réduction carbone.">
     <title>Projet Pilote Canaries - InSail.One</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -33,12 +33,12 @@
             <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto; padding-top: 80px; padding-bottom: 120px;">
                 <h1 style="font-size: 3.2rem; color: white; margin-bottom: var(--spacing-md);">Projet Pilote aux Canaries</h1>
                 <p style="font-size: 1.5rem; color: white; font-weight: 500; margin-bottom: var(--spacing-xl);">L'InSail.One en action</p>
-                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">Tenerife - La Gomera : un catamaran hybride de 24,4m dans un corridor à haute biodiversité.</p>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.7;">Tenerife - La Gomera : un catamaran hybride de 24 m, 120 passagers, dans un corridor à haute biodiversité.</p>
             </div>
         </div>
         
         <!-- Vague blanche organique en bas du hero -->
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 150px; z-index: 1;">
+        <div style="position: absolute; bottom: -1px; left: 0; width: 100%; height: 150px; z-index: 1;">
             <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
                 <path d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#ffffff"/>
             </svg>
@@ -46,11 +46,11 @@
     </section>
 
     <!-- Le projet -->
-    <section class="section">
+    <section class="section" style="padding-top: 0;">
         <div class="container">
             <div class="text-center mb-xl">
                 <h2>Tenerife - La Gomera</h2>
-                <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Un catamaran hybride de 24,4m dans un corridor à haute biodiversité.</p>
+                <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Un catamaran hybride de 24 m, 120 passagers, dans un corridor à haute biodiversité.</p>
             </div>
             
             <!-- Blueprint technique avec spécifications -->
@@ -68,10 +68,11 @@
                                 <span style="font-size: 1.3rem;">📏</span> Dimensions
                             </h4>
                             <div style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
-                                <div><strong>Longueur:</strong> 24,4 m (80 ft)</div>
+                                <div><strong>Longueur:</strong> 24 m</div>
                                 <div><strong>Largeur:</strong> 11,5 m</div>
                                 <div><strong>Tirant d'eau:</strong> 1,8 m</div>
                                 <div><strong>Déplacement:</strong> 38 tonnes</div>
+                                <div><strong>Capacité:</strong> 120 passagers</div>
                             </div>
                         </div>
                         
@@ -362,8 +363,13 @@
             <!-- Carrousel "Le saviez-vous ?" -->
             <div class="did-you-know-carousel" style="margin-top: var(--spacing-lg); padding: var(--spacing-lg); background: rgba(77, 182, 172, 0.05); border-radius: var(--border-radius-lg); position: relative; overflow: hidden;">
                 <div style="display: flex; align-items: center; justify-content: center; gap: var(--spacing-md);">
-                    <!-- Icône -->
-                    <div style="font-size: 2.5rem; flex-shrink: 0;">💡</div>
+                    <!-- Icône SVG minimaliste -->
+                    <div style="flex-shrink: 0;">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="var(--turquoise)" stroke-width="2" opacity="0.3"/>
+                            <path d="M20 15v10M20 28v2" stroke="var(--ocean-blue)" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     
                     <!-- Contenu du carrousel -->
                     <div style="flex: 1; max-width: 800px; position: relative;">
@@ -380,7 +386,7 @@
                         </div>
                         <div class="dyk-slide" data-slide="2">
                             <p style="font-size: 1rem; color: var(--ocean-blue); margin: 0; line-height: 1.6;">
-                                <strong>Saviez-vous que</strong> InSail.One évite 1 100 tonnes de CO₂ par an, soit l'équivalent de l'absorption annuelle de 50 000 arbres ?
+                                <strong>Saviez-vous que</strong> InSail.One évite 2 000 tonnes de CO₂ par an, soit l'équivalent de l'absorption annuelle de 90 000 arbres ?
                             </p>
                         </div>
                         <div class="dyk-slide" data-slide="3">

@@ -71,7 +71,7 @@
                                 <span class="mini-stat-label">Voile</span>
                             </div>
                             <div class="mini-stat">
-                                <span class="mini-stat-number">-89%</span>
+                                <span class="mini-stat-number">-92%</span>
                                 <span class="mini-stat-label">Bruit</span>
                             </div>
                         </div>
@@ -120,18 +120,18 @@
             <!-- Approche cards - Style simplifié sans icônes -->
             <div class="approach-grid-organic">
                 <div class="approach-card-organic" style="text-align: center;">
+                    <h3 style="white-space: nowrap;">Régénération</h3>
+                    <p>Impact positif et décarbonation maritime</p>
+                </div>
+                
+                <div class="approach-card-organic" style="text-align: center;">
                     <h3 style="white-space: nowrap;">Économie circulaire</h3>
                     <p>Matériaux recyclés et conception durable</p>
                 </div>
                 
                 <div class="approach-card-organic" style="text-align: center;">
-                    <h3 style="white-space: nowrap;">Biomimétisme</h3>
-                    <p>Inspiré par la nature et l'océan</p>
-                </div>
-                
-                <div class="approach-card-organic" style="text-align: center;">
-                    <h3 style="white-space: nowrap;">Impact positif</h3>
-                    <p>Régénération des écosystèmes marins</p>
+                    <h3 style="white-space: nowrap;">Innovation continue</h3>
+                    <p>Recherche et développement permanents</p>
                 </div>
             </div>
             
@@ -193,17 +193,17 @@
                     <div style="flex: 1; max-width: 700px; position: relative;">
                         <div class="dyk-slide active" data-slide="0">
                             <p style="font-size: 0.95rem; color: var(--ocean-blue); margin: 0; line-height: 1.6;">
-                                <strong>Le saviez-vous ?</strong> Les voiles WISAMO d'InSail.One se déploient automatiquement en 3 minutes et peuvent générer jusqu'à 80% de la propulsion nécessaire.
+                                <strong>Le saviez-vous ?</strong> InSail évite 2 000 tonnes de CO₂ par an, soit l'équivalent de l'absorption annuelle de 90 000 arbres.
                             </p>
                         </div>
                         <div class="dyk-slide" data-slide="1">
                             <p style="font-size: 0.95rem; color: var(--ocean-blue); margin: 0; line-height: 1.6;">
-                                <strong>Le saviez-vous ?</strong> InSail.One évite 1 100 tonnes de CO₂ par an, soit l'équivalent de l'absorption annuelle de 50 000 arbres.
+                                <strong>Le saviez-vous ?</strong> Les voiles WISAMO peuvent générer jusqu'à 100 % de l'énergie nécessaire à la propulsion.
                             </p>
                         </div>
                         <div class="dyk-slide" data-slide="2">
                             <p style="font-size: 0.95rem; color: var(--ocean-blue); margin: 0; line-height: 1.6;">
-                                <strong>Le saviez-vous ?</strong> La pollution sonore des ferries perturbe la communication des baleines sur des centaines de kilomètres. InSail offre une solution respectueuse.
+                                <strong>Le saviez-vous ?</strong> La pollution sonore des ferries perturbe la communication des baleines sur des centaines de kilomètres. InSail offre une <a href="https://bluespeeds.org/fr/" target="_blank" rel="noopener noreferrer" style="color: var(--turquoise); text-decoration: underline;">solution respectueuse</a>.
                             </p>
                         </div>
                     </div>
@@ -235,6 +235,36 @@
                 <a href="pages/contact.html" class="btn-glass-primary">Contactez-nous</a>
             </div>
         </div>
+    </section>
+
+    <!-- Section Partenaires et soutiens avec animation de défilement -->
+    <section style="background: white; padding: var(--spacing-xl) 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 style="font-size: 2rem; color: var(--ocean-blue); margin-bottom: var(--spacing-xs);">Partenaires et soutiens</h2>
+                <p style="font-size: 1rem; color: var(--text-light);">Ils nous accompagnent dans notre mission</p>
+            </div>
+        </div>
+        
+        <!-- Container de défilement infini -->
+        <div style="width: 100vw; margin-left: calc(-50vw + 50%); overflow: hidden; position: relative;">
+            <div style="display: flex; animation: scroll-left 45s linear infinite; width: max-content;">
+                <img src="assets/images/Support and partners.webp" alt="Partenaires et soutiens InSail" style="width: 100vw; height: auto; opacity: 0.7; display: block;">
+                <img src="assets/images/Support and partners.webp" alt="Partenaires et soutiens InSail" style="width: 100vw; height: auto; opacity: 0.7; display: block;">
+                <img src="assets/images/Support and partners.webp" alt="Partenaires et soutiens InSail" style="width: 100vw; height: auto; opacity: 0.7; display: block;">
+            </div>
+        </div>
+        
+        <style>
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-33.333%);
+                }
+            }
+        </style>
     </section>
 
     <!-- Footer -->

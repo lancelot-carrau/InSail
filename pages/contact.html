@@ -6,6 +6,48 @@
     <meta name="description" content="Contactez InSail - Investisseurs, opérateurs maritimes, journalistes. Rejoignez la révolution de la mobilité maritime régénératrice.">
     <title>Contact - InSail</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Styles pour les champs de formulaire avec focus organique */
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--turquoise) !important;
+            box-shadow: 0 0 0 3px rgba(64, 181, 160, 0.1) !important;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(64, 181, 160, 0.4) !important;
+        }
+        
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+        
+        /* Animation pour le message de confirmation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #confirmationMessage {
+            animation: slideIn 0.3s ease;
+        }
+        
+        /* Responsive pour mobile */
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header avec navigation -->
@@ -26,29 +68,40 @@
             </nav>
         </div>
     </header>
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 48, 95, 0.4), rgba(0, 48, 95, 0.4)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xl);">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Contact</h1>
-                <p class="hero-subtitle">Naviguons ensemble</p>
+    <!-- Hero Section avec design organique -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 48, 95, 0.85) 0%, rgba(64, 181, 160, 0.85) 100%), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover; color: white; padding: calc(var(--spacing-xxl) + 80px) 0 var(--spacing-xxl); position: relative; overflow: visible;">
+        <!-- Formes organiques en arrière-plan -->
+        <div style="position: absolute; top: -10%; right: -5%; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.05); border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; filter: blur(40px);"></div>
+        <div style="position: absolute; bottom: -15%; left: -5%; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.03); border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%; filter: blur(50px);"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="hero-content text-center">
+                <h1 style="font-size: 3rem; margin-bottom: var(--spacing-md);">Contactez-nous</h1>
+                <p class="hero-subtitle" style="font-size: 1.3rem; opacity: 0.95;">Naviguons ensemble vers l'avenir</p>
             </div>
+        </div>
+
+        <!-- Wave Divider intégré au hero -->
+        <div style="position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 2;">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block;">
+                <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="white"/>
+            </svg>
         </div>
     </section>
 
-    <!-- Formulaire de contact -->
-    <section class="section">
+    <!-- Formulaire de contact avec design organique -->
+    <section class="section" style="background: white; padding: var(--spacing-xxl) 0;">
         <div class="container">
-            <div class="grid grid-2">
-                <!-- Formulaire principal -->
-                <div>
-                    <h2>Envoyez-nous un message</h2>
+            <div class="grid grid-2" style="gap: var(--spacing-xl); align-items: start;">
+                <!-- Formulaire principal avec effet glassmorphism -->
+                <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 30px; padding: var(--spacing-xl); box-shadow: 0 8px 32px rgba(0, 48, 95, 0.1); border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <h2 style="color: var(--ocean-blue); margin-bottom: var(--spacing-lg);">Envoyez-nous un message</h2>
                     
-                    <form id="contactForm" style="max-width: 500px;">
+                    <form id="contactForm">
                         <!-- Raison du contact -->
-                        <div class="form-group">
-                            <label for="contactReason" class="form-label">Vous êtes * :</label>
-                            <select id="contactReason" name="contactReason" class="form-select" required>
+                        <div class="form-group" style="position: relative; z-index: 10; margin-bottom: var(--spacing-md);">
+                            <label for="contactReason" class="form-label" style="display: block; margin-bottom: var(--spacing-xs); color: var(--ocean-blue); font-weight: 500;">Vous êtes * :</label>
+                            <select id="contactReason" name="contactReason" class="form-select" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid rgba(64, 181, 160, 0.2); border-radius: 15px; background: white; transition: all 0.3s ease; font-size: 1rem;">
                                 <option value="">Sélectionnez votre profil</option>
                                 <option value="investisseur">Investisseur</option>
                                 <option value="operateur">Opérateur maritime</option>
@@ -58,67 +111,93 @@
                         </div>
 
                         <!-- Nom -->
-                        <div class="form-group">
-                            <label for="nom" class="form-label">Nom * :</label>
-                            <input type="text" id="nom" name="nom" class="form-input" required>
+                        <div class="form-group" style="position: relative; z-index: 1; margin-bottom: var(--spacing-md);">
+                            <label for="nom" class="form-label" style="display: block; margin-bottom: var(--spacing-xs); color: var(--ocean-blue); font-weight: 500;">Nom * :</label>
+                            <input type="text" id="nom" name="nom" class="form-input" required autocomplete="name" style="width: 100%; padding: var(--spacing-sm); border: 2px solid rgba(64, 181, 160, 0.2); border-radius: 15px; background: white; transition: all 0.3s ease; font-size: 1rem;">
                         </div>
 
                         <!-- Email -->
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email * :</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
+                        <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                            <label for="email" class="form-label" style="display: block; margin-bottom: var(--spacing-xs); color: var(--ocean-blue); font-weight: 500;">Email * :</label>
+                            <input type="email" id="email" name="email" class="form-input" required autocomplete="email" style="width: 100%; padding: var(--spacing-sm); border: 2px solid rgba(64, 181, 160, 0.2); border-radius: 15px; background: white; transition: all 0.3s ease; font-size: 1rem;">
                         </div>
 
                         <!-- Organisation -->
-                        <div class="form-group">
-                            <label for="organisation" class="form-label">Organisation :</label>
-                            <input type="text" id="organisation" name="organisation" class="form-input">
+                        <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                            <label for="organisation" class="form-label" style="display: block; margin-bottom: var(--spacing-xs); color: var(--ocean-blue); font-weight: 500;">Organisation :</label>
+                            <input type="text" id="organisation" name="organisation" class="form-input" style="width: 100%; padding: var(--spacing-sm); border: 2px solid rgba(64, 181, 160, 0.2); border-radius: 15px; background: white; transition: all 0.3s ease; font-size: 1rem;">
                         </div>
 
                         <!-- Champs spécifiques selon le profil (générés dynamiquement) -->
                         <div id="specificFields"></div>
 
                         <!-- Message personnalisé selon le profil -->
-                        <div class="form-group">
-                            <label for="message" class="form-label">
+                        <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                            <label for="message" class="form-label" style="display: block; margin-bottom: var(--spacing-xs); color: var(--ocean-blue); font-weight: 500;">
                                 <span id="messageLabel">Message * :</span>
                             </label>
-                            <textarea id="message" name="message" class="form-textarea" required placeholder="Votre message..."></textarea>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Votre message..." style="width: 100%; min-height: 150px; padding: var(--spacing-sm); border: 2px solid rgba(64, 181, 160, 0.2); border-radius: 15px; background: white; transition: all 0.3s ease; font-size: 1rem; resize: vertical; font-family: inherit;"></textarea>
                         </div>
 
                         <!-- Consentement RGPD -->
-                        <div class="form-group">
-                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); font-size: 0.9rem; line-height: 1.4;">
-                                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top: 2px; flex-shrink: 0;">
+                        <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); font-size: 0.9rem; line-height: 1.4; color: var(--text-dark);">
+                                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top: 2px; flex-shrink: 0; width: 18px; height: 18px; cursor: pointer;">
                                 <span>J'accepte que mes données soient utilisées pour répondre à ma demande. *</span>
                             </label>
                         </div>
 
                         <!-- Bouton d'envoi -->
-                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md);">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: var(--spacing-md); background: linear-gradient(135deg, var(--ocean-blue), var(--turquoise)); color: white; border: none; border-radius: 20px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(64, 181, 160, 0.3);">
                             Envoyer
                         </button>
                     </form>
                     
                     <!-- Message de confirmation (caché par défaut) -->
-                    <div id="confirmationMessage" style="display: none; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--mint-green); color: white; border-radius: var(--border-radius);">
-                        <strong>Message envoyé !</strong> Nous vous recontacterons bientôt.
+                    <div id="confirmationMessage" style="display: none; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: linear-gradient(135deg, var(--mint-green), var(--turquoise)); color: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(64, 181, 160, 0.2);">
+                        <strong>✓ Message envoyé !</strong> Nous vous recontacterons bientôt.
                     </div>
                 </div>
 
-                <!-- Informations de contact -->
-                <div>
-                    <h2>Coordonnées</h2>
+                <!-- Informations de contact avec design organique -->
+                <div style="position: sticky; top: 100px;">
+                    <h2 style="color: var(--ocean-blue); margin-bottom: var(--spacing-lg);">Nos coordonnées</h2>
                     
-                    <div class="card mb-lg">
-                        <h3 style="color: var(--ocean-blue);">Email</h3>
-                        <p>contact@insail.ocean</p>
+                    <!-- Card Email -->
+                    <div style="background: linear-gradient(135deg, rgba(64, 181, 160, 0.05), rgba(0, 48, 95, 0.05)); backdrop-filter: blur(10px); border-radius: 25px; padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid rgba(64, 181, 160, 0.1); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(64, 181, 160, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: var(--spacing-sm);">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--turquoise), var(--mint-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <h3 style="color: var(--ocean-blue); margin: 0; font-size: 1.3rem;">Email</h3>
+                            <a href="mailto:contact@insail.ocean" style="color: var(--turquoise); text-decoration: none; font-weight: 500; font-size: 1.05rem;">contact@insail.ocean</a>
+                        </div>
                     </div>
                     
-                    <div class="card">
-                        <h3 style="color: var(--ocean-blue);">Réseaux</h3>
-                        <p>LinkedIn : InSail Technologies</p>
-                    </div>
+                    <!-- Card LinkedIn -->
+                    <a href="https://www.linkedin.com/company/insailproject/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 48, 95, 0.05), rgba(64, 181, 160, 0.05)); backdrop-filter: blur(10px); border-radius: 25px; padding: var(--spacing-lg); border: 1px solid rgba(0, 48, 95, 0.1); cursor: pointer; transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0, 48, 95, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                            <div style="display: flex; flex-direction: column; align-items: center; gap: var(--spacing-sm);">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0077B5, #00A0DC); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                                <h3 style="color: var(--ocean-blue); margin: 0; font-size: 1.3rem;">LinkedIn</h3>
+                                <p style="margin: 0; color: var(--ocean-blue); font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 1.05rem;">
+                                    <span>InSail Technologies</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
